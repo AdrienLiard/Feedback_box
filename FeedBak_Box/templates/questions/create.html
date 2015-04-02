@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Feedback Box By BVA - Create Question</title>
+    </head>
+    <body>
+        <p>Create Question</p>
+        {% for error in get_flashed_messages(category_filter=['error']) %}
+            <p>{{ error }}</p>
+        {% endfor %}
+        <form action="addquestion" method="post">
+            <label for="name">Name</label><input type="text" name='name' value="{{ question['name'] if question!=None else '' }}"><br>
+            <label for="text">Text</label><input type="text" name='text' value="{{ question['text'] if question!=None else '' }}"><br>
+            <label for="type">Type</label>
+            <select name="type" id="questiontype">
+                {% for question_type in question_types %}
+                    <option value="{{ question_type['id'] }}" {{ 'selected' if question!=None and question['type']==question_type }}>{{ question_type['name'] }}</option>
+                {% endfor %}
+            </select>
+            <br>
+            <input type="submit" value="Add question">
+        </form>
+    </body>
+</html>

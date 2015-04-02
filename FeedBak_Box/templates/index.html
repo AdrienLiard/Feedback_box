@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Feedback Box By BVA</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+    </head>
+    <body>
+        <div class='container'>
+            {% for message in get_flashed_messages() %}
+                <div class='alert alert-success'>{{ message }}</div>
+            {% endfor %}
+         <table class='table table-bordered table-condensed'>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Text</th>
+                    <th>Type</th>
+                    <th>Order</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                    <th>UP</th>
+                    <th>DOWN</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for question in questions %}
+                    <tr>
+                        <td>{{ question['name'] }}</td>
+                        <td>{{ question['text'] }}</td>
+                        <td>{{ question['type'] }}</td>
+                        <td>{{ question['question_order'] }}</td>
+                        <td><a href="editquestion/{{question['id']}}">Edit</a></td>
+                        <td><a href="deletequestion/{{question['id']}}">Delete</a></td>
+                        <td><a href="upquestion/{{question['id']}}">UP</a></td>
+                        <td><a href="downquestion/{{question['id']}}">DOWN</a></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a class='btn btn-primary' href='createquestion'>Add question</a>
+    </div>
+    </body>
+</html>
