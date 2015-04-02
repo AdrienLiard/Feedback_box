@@ -1,25 +1,26 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>The Feedback Box By BVA - Create Question</title>
-    </head>
-    <body>
+{% extends "layout.html" %}
+{% block body %}
         <h2>Edit Question</h2>
         {% for error in get_flashed_messages(category_filter=['error']) %}
             <p>{{ error }}</p>
         {% endfor %}
         <form action="{{url_for('save_question')}}" method="post">
             <input type='hidden' name='id' value="{{question['id']}}">
-            <label for="name">Name</label><input type="text" name='name' value="{{ question['name'] if question!=None else '' }}"><br>
-            <label for="text">Text</label><input type="text" name='text' value="{{ question['text'] if question!=None else '' }}"><br>
+            <div class="form-group">
+                <label for="name">Name</label><input class='form-control'  type="text" name='name' value="{{ question['name'] if question!=None else '' }}">
+            </div>
+            <div class="form-group">
+                <label for="text">Text</label><input class='form-control'  type="text" name='text' value="{{ question['text'] if question!=None else '' }}">
+            </div>
+            <div class="form-group">
             <label for="type">Type</label>
-            <select name="type" id="questiontype">
-                {% for question_type in question_types %}
-                    <option value="{{ question_type['id'] }}" {{ 'selected' if question!=None and question['type']==question_type }}>{{ question_type['name'] }}</option>
-                {% endfor %}
-            </select>
-            <br>
-            <input type="submit" value="Update">
+                <select name="type" id="questiontype"  class='form-control' >
+                    {% for question_type in question_types %}
+                        <option value="{{ question_type['id'] }}" {{ 'selected' if question!=None and question['type']==question_type }}>{{ question_type['name'] }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <input class="btn btn-primary" type="submit" value="Save">
+            <a class='btn btn-default' href='/'>Cancel</a>
         </form>
-    </body>
-</html>
+{% endblock %}

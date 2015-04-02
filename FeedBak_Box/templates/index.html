@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>The Feedback Box By BVA</title>
-        <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
-    </head>
-    <body>
-        <div class='container'>
+{% extends "layout.html" %}
+{% block body %}
             {% for message in get_flashed_messages() %}
-                <div class='alert alert-success'>{{ message }}</div>
+                <div class="alert alert-success alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>{{ message }}</div>
             {% endfor %}
          <table class='table table-bordered table-condensed'>
             <thead>
@@ -38,6 +32,5 @@
             </tbody>
         </table>
         <a class='btn btn-primary' href='createquestion'>Add question</a>
-    </div>
-    </body>
-</html>
+
+{% endblock %}
