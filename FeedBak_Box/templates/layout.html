@@ -1,16 +1,46 @@
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>The Feedback Box By BVA</title>
-        <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
-    </head>
-    <body style='padding-top:70px'>
-        <div class='container'>
-         {% block body %}{% endblock %}
-        </div>
-    <script src="{{url_for('static',filename='js/angular.min.js')}}"></script>
-    <script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
-    <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <title>Feedback box by BVA</title>
 
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="{{url_for('static',filename='css/ratchet.css')}}" rel="stylesheet">
+    <link href="{{url_for('static',filename='css/font-awesome.min.css')}}" rel="stylesheet">
+    <!-- Include the compiled Ratchet JS -->
+    
+    <script src="{{url_for('static',filename='js/angular.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/angular-route.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/angular-checklist.js')}}"></script>
+  </head>
+  <body>
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav">
+      <h1 class="title"><i class="fa fa-inbox"></i> Feedback Box <i class="fa fa-inbox"></i></h1>
+    </header>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content" ng-app="feedback" ng-view>
+     {% block body %}{% endblock %}
+   
+    </div>
+
+<nav class="bar bar-tab">
+  <a class="tab-item active" href="#about">
+    <span class="icon icon-info"></span>
+    <span class="tab-label">A propos</span>
+  </a>
+ 
+</nav>
+
+  </body>
 </html>

@@ -1,0 +1,23 @@
+<style>
+.selected{background:rgb(223,224,225);}
+.response>i{margin-right:10px;color:rgb(223,224,225);}
+.selected>i{color:black;}
+.question>i{color:rgb(230,60,20);}
+</style>
+<ul class="table-view" ng-if="question.type=='single'">
+	<li class='table-view-cell question' style='padding-left:30px'><i class="fa fa-question-circle"></i> {{question.libelle}}</li>
+	<li class='table-view-cell response' ng-class='question.value[0]==response.value?"selected":""' ng-repeat="response in question.responses" ng-click='changeValue(response.value)'><i class="fa fa-check-circle"></i> <input style='display:none' type='radio' ng-model="question.value[0]" ng-checked="question.value[0]==response.value" name='question' value="{{response.value}}"><span>{{response.lib}}</span></li>
+	</ul>
+</ul>
+
+<ul class="table-view" ng-if="question.type=='multiple'">
+	<li class='table-view-cell question'><i class="fa fa-question-circle"></i> {{question.libelle}}</li>
+	<li class='table-view-cell response' ng-class='question.value.indexOf(response.value)==-1?"":"selected"' ng-repeat="response in question.responses" ng-click='changeValue(response.value)'><i class="fa fa-check-square"></i><input style='display:none' type='checkbox' checklist-model='question.value' name='question' checklist-value="response.value"><span>{{response.lib}}</span></li>
+</ul>
+
+<ul class="table-view" ng-if="question.type=='open'">
+	<li class='table-view-cell question'><i class="fa fa-question-circle"></i> {{question.libelle}}</li>
+	<textarea name='question' ng-model="question.value[0]" rows="5"></textarea>
+</ul>
+
+<button class='btn btn-block' ng-show='question.value.length>0' ng-click='nextQuestion()'>Suivant <i class="fa fa-chevron-right"></i></button>

@@ -4,8 +4,9 @@
 #Imports
 #-------------------------------
 import sqlite3
-from flask import Flask,request,session,g,redirect,url_for,abort,render_template,flash
+from flask import Flask,request,session,g,jsonify,redirect,url_for,abort,render_template,flash,make_response
 from contextlib import closing
+import uuid
 #-------------------------------
 
 #-------------------------------
@@ -16,6 +17,7 @@ DEBUG=True
 PORT=8000
 HOST='0.0.0.0'
 SECRET_KEY = 'MySuperSecretKey'
+ROOT_URL="http://feedback.box/"
 #-------------------------------
 
 #-------------------------------
@@ -25,118 +27,99 @@ app=Flask(__name__)
 app.config.from_object(__name__)
 #-------------------------------
 
-#-------------------------------
-#   Database connection helpers
+questionnaire={
+    'questions':[{
+    'id':0,
+    'type':'multiple',
+    'libelle':'Etes vous satisfait?',
+    'responses':[{'value':1,'lib':'Oui'},{'value':2,'lib':'Non'}]
+    },
+    {
+    'id':1,
+    'type':'single',
+    'libelle':'Etes vous vraiment satisfait?',
+    'responses':[{'value':1,'lib':'Oui'},{'value':2,'lib':'Non'}]
+    }]
+}
+
 #-------------------------------
 def connect_db():
     return sqlite3.connect(app.config['DATABASE'])
 
-def question_types():
-    cursor=g.db.execute("select id,name from questiontypes").fetchall()
-    for row in cursor:
-        print row
-    return [dict(id=row[0],name=row[1]) for row in cursor]
-
-def questions():
-    cursor=g.db.execute("select a.id,a.name,a.text,b.id as typeid,b.name as type,question_order from questions as a inner join questiontypes as b on b.id=a.type order by question_order").fetchall()
-    for row in cursor:
-        print row
-    return [dict(id=row[0],name=row[1],text=row[2],typeid=row[3],type=row[4],question_order=row[5]) for row in cursor]
-
-
 def init_db():
     with closing(connect_db()) as db:
-        with app.open_resource('DatabaseSchema.sql',mode='r') as f:
+        with app.open_resource('DatabaseSchema.sql', mode='r') as f:
             db.cursor().executescript(f.read())
         db.commit()
 
 @app.before_request
 def before_request():
-    g.db=connect_db()
+    g.db = connect_db()
 
 @app.teardown_request
 def teardown_request(exception):
-    db=getattr(g,'db',None)
+    db = getattr(g, 'db', None)
     if db is not None:
         db.close()
-
-#-------------------------------
-
 #-------------------------------
 #   App routes
 #-------------------------------
 
 @app.route('/')
 def index():
-    return render_template('index.html',questions=questions())
+        id=request.cookies.get('id')
+        resp=make_response(render_template('questionnaire.html'))
+        if(id==None):
+            guid=str(uuid.uuid4())
+            g.db.execute("insert into interviews (guid) values (?)",[guid])
+            g.db.commit()
+            resp.set_cookie("id",guid)
+        return resp
 
-
-@app.route('/deletequestion/<id>')
-def delete_question(id):
-    order=g.db.execute("select question_order from questions").fetchone()[0]
-    # Modify order
-    g.db.execute("update questions set question_order=question_order + 1 where question_order>?",[order])
-    g.db.commit()
-    g.db.execute("delete from questions where id=?",[id])
-    g.db.commit()
-    flash("Question deleted")
-    return redirect(url_for("index"))
-
-@app.route('/addquestion', methods=["POST"])
-def add_question():
-    order=g.db.execute("select max(question_order) from questions").fetchone()[0]
-    if order==None:
-        order=0
-    exists=g.db.execute("select count(id) from questions where name=?",[request.form['name']]).fetchone()[0] > 0
-    if exists:
-        flash("A question named " + request.form['name'] + " already exists",category="error")
-        question={'name':request.form['name'],'type':request.form['type'],'text':request.form['text'] }
-        return render_template('questions/create.html',question_types=question_types(),question=question)
+@app.route("/api/nextquestion",methods=['POST'])
+def nextQuestion():
+    guid=request.cookies.get('id')
+    #get last question
+    question=request.get_json()
+    if(question==None):
+        question=questionnaire['questions'][0]
     else:
-        g.db.execute("insert into questions (question_order,name,[text],type,max_responses,authorize_nr) values (?,?,?,?,?,?)",[order+1,request.form['name'],request.form['text'],request.form['type'],1,0])
+        print question["id"]
+        if(question["type"]=='open'):
+            g.db.execute("insert into interviewsdata (guid,question_id,open_value) values (?,?,?)",[guid,question["id"],question["value"]])
+            g.db.commit()
+        elif(question["type"]=='single'):
+            g.db.execute("insert into interviewsdata (guid,question_id,closed_value) values (?,?,?)",[guid,question["id"],question["value"][0]])
+            g.db.commit()
+        elif(question["type"]=="multiple"):
+            for val in question["value"]:
+                g.db.execute("insert into interviewsdata (guid,question_id,closed_value) values (?,?,?)",[guid,question["id"],val])
+                g.db.commit()
+        g.db.execute("update interviews set last_question=? where guid=?",[question["id"],guid])
         g.db.commit()
-    flash("Question added")
-    return redirect(url_for("index"))
-
-@app.route('/createquestion')
-def create_question():
-    return render_template('questions/create.html',question_types=question_types(),question=None)
-
-@app.route('/editquestion/<int:id>')
-def edit_question(id):
-    cursor=g.db.execute("select a.id,a.name,a.text,b.id as typeid,b.name as type from questions as a inner join questiontypes as b on b.id=a.type where a.id=?",[id]).fetchone()
-    question={'id':cursor[0],'name':cursor[1],'text':cursor[2],'typeid':cursor[3],'type':cursor[4]}
-    return render_template('questions/edit.html',question_types=question_types(),question=question)
-
-@app.route('/savequestion', methods=["POST"])
-def save_question():
-    g.db.execute("update questions set name=?,[text]=?,type=? where id=?",[request.form['name'],request.form['text'],request.form['type'],request.form['id']])
-    g.db.commit()
-    flash("Question updated")
-    return redirect(url_for("index"))
-
-@app.route('/upquestion/<id>')
-def up_question(id):
-    order=g.db.execute("select question_order from questions where id=?",[id]).fetchone()[0]
-    if order>1:
-        g.db.execute("update questions set question_order=? where question_order=?",[order,order-1])
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+    print maxQuestionAnswered
+    if(maxQuestionAnswered+1==len(questionnaire['questions'])):
+        print len(questionnaire['questions'])
+        g.db.execute("update interviews set completed=1 where guid=?",[guid])
         g.db.commit()
-        g.db.execute("update questions set question_order=? where id=?",[order-1,id])
-        g.db.commit()
-    return redirect(url_for("index"))
+        return jsonify({"id":-1})
+    question=questionnaire['questions'][maxQuestionAnswered+1]
+    question["value"]=[]
+    return jsonify(question)
 
-@app.route('/downquestion/<id>')
-def down_question(id):
-    order=g.db.execute("select question_order from questions where id=?",[id]).fetchone()[0]
-    max_order=g.db.execute("select max(question_order) from questions").fetchone()[0]
-    if order<max_order:
-        g.db.execute("update questions set question_order=? where question_order=?",[order,order+1])
-        g.db.commit()
-        g.db.execute("update questions set question_order=? where id=?",[order+1,id])
-        g.db.commit()
-    return redirect(url_for("index"))
+@app.route("/dashboard")
+def dashboard():
+    return render_template('dashboard.html')
 
-#-------------------------------
+@app.route("/api/questionnaire")
+def get_questionnaire():
+    result=[]
+    return jsonify(questionnaire)
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return url_for('index')
 #   App
 #-------------------------------
 if __name__=='__main__':
