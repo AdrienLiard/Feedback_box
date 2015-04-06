@@ -68,7 +68,7 @@ def teardown_request(exception):
 @app.route('/')
 def index():
         print request.headers.get('User-Agent')
-        if(request.headers.get('User-Agent') == 'CaptiveNetworkSupport-277 wispr'):
+        if(request.headers.get('User-Agent').startswith('CaptiveNetworkSupport')):
             return "<HTML><HEAD><TITLE>Success</TITLE></HEAD><BODY>Success</BODY></HTML>"
         if(request.url_root!=ROOT_URL):
             print request.url_root
