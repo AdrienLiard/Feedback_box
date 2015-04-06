@@ -67,6 +67,8 @@ def teardown_request(exception):
 
 @app.route('/')
 def index():
+        if(request.root_url!=ROOT_URL):
+            return redirect(ROOT_URL)
         id=request.cookies.get('id')
         resp=make_response(render_template('questionnaire.html'))
         if(id==None):
@@ -119,7 +121,7 @@ def get_questionnaire():
 
 @app.errorhandler(404)
 def page_not_found(e):
-    return url_for('index')
+    return redirect(ROOT_URL)
 #   App
 #-------------------------------
 if __name__=='__main__':
