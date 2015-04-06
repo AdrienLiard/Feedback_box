@@ -14,7 +14,7 @@ import uuid
 #-------------------------------
 DATABASE='data/feedback_box.db'
 DEBUG=True
-PORT=8000
+PORT=80
 HOST='0.0.0.0'
 SECRET_KEY = 'MySuperSecretKey'
 ROOT_URL="http://feedback.box/"
