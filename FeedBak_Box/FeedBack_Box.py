@@ -67,6 +67,7 @@ def teardown_request(exception):
 
 @app.route('/')
 def index():
+        print request.headers.get('User-Agent')
         if(request.url_root!=ROOT_URL):
             print request.url_root
             return redirect(ROOT_URL)
@@ -122,6 +123,7 @@ def get_questionnaire():
 
 @app.errorhandler(404)
 def page_not_found(e):
+    print request.headers.get('User-Agent')
     return redirect(ROOT_URL)
 #   App
 #-------------------------------
