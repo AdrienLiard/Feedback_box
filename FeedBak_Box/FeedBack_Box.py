@@ -38,7 +38,7 @@ questionnaire={
     'id':1,
     'type':'single',
     'libelle':u'Quelle est la probabilité que vous recommandiez la FeedBack Box à un collègue/un ami ?',
-    'responses':[{'value':1,'lib':'1'},{'value':2,'lib':'2'},{'value':3,'lib':'3'},{'value':4,'lib':'4'},{'value':5,'lib':'5'},{'value':6,'lib':'6'},{'value':7,'lib':'7'},{'value':8,'lib':'8'},{'value':9,'lib':'9',{'value':10,'lib':'10'}}]
+    'responses':[{'value':1,'lib':'1'},{'value':2,'lib':'2'},{'value':3,'lib':'3'},{'value':4,'lib':'4'},{'value':5,'lib':'5'},{'value':6,'lib':'6'},{'value':7,'lib':'7'},{'value':8,'lib':'8'},{'value':9,'lib':'9',{'value':10,'lib':'10'}]
     },
     {
     'id':2,
