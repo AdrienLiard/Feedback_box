@@ -96,7 +96,7 @@ def nextQuestion():
     else:
         print question["id"]
         if(question["type"]=='open'):
-            g.db.execute("insert into interviewsdata (guid,question_id,open_value) values (?,?,?)",[guid,question["id"],question["value"]])
+            g.db.execute("insert into interviewsdata (guid,question_id,open_value) values (?,?,?)",[guid,question["id"],question["value"][0]])
             g.db.commit()
         elif(question["type"]=='single'):
             g.db.execute("insert into interviewsdata (guid,question_id,closed_value) values (?,?,?)",[guid,question["id"],question["value"][0]])
