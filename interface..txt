@@ -1,0 +1,15 @@
+interface = wlan0
+dhcp-range=192.168.3.2,192.168.3.50,255.255.255.0,12h
+address=/#/192.168.3.1
+
+
+
+
+interface = wlan0
+driver=nl80211
+ssid = FBB
+h_mode=g
+chanel = 3
+beacon_int = 100
+auth_algs = 3
+wmm_enabled= 1
