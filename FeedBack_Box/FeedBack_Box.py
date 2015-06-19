@@ -7,6 +7,7 @@ from __future__ import print_function
 import sqlite3
 from flask import Flask,request,session,g,jsonify,redirect,url_for,abort,render_template,flash,make_response
 from contextlib import closing
+from werkzeug.contrib.fixers import ProxyFix
 import uuid
 
 #-------------------------------
@@ -25,8 +26,8 @@ ROOT_URL="http://feedbackbox.io/"
 #-------------------------------
 #   Creating app
 #-------------------------------
-app=Flask(__name__)
-app.config.from_object(__name__)
+application=Flask(__name__)
+application.config.from_object(__name__)
 #-------------------------------
 
 questionnaire={
@@ -50,19 +51,19 @@ questionnaire={
 
 #-------------------------------
 def connect_db():
-    return sqlite3.connect(app.config['DATABASE'])
+    return sqlite3.connect(application.config['DATABASE'])
 
 def init_db():
     with closing(connect_db()) as db:
-        with app.open_resource('DatabaseSchema.sql', mode='r') as f:
+        with application.open_resource('DatabaseSchema.sql', mode='r') as f:
             db.cursor().executescript(f.read())
         db.commit()
 
-@app.before_request
+@application.before_request
 def before_request():
     g.db = connect_db()
 
-@app.teardown_request
+@application.teardown_request
 def teardown_request(exception):
     db = getattr(g, 'db', None)
     if db is not None:
@@ -71,7 +72,7 @@ def teardown_request(exception):
 #   App routes
 #-------------------------------
 
-@app.route('/')
+@application.route('/')
 def index():
         print("**********      ROOT          ***************")
         print(request.headers.get('User-Agent'))
@@ -95,7 +96,7 @@ def index():
             resp.set_cookie("id",guid)
         return resp
 
-@app.route("/api/nextquestion",methods=['POST'])
+@application.route("/api/nextquestion",methods=['POST'])
 def nextQuestion():
     guid=request.cookies.get('id')
     #get last question
@@ -127,16 +128,16 @@ def nextQuestion():
     question["value"]=[]
     return jsonify(question)
 
-@app.route("/dashboard")
+@application.route("/dashboard")
 def dashboard():
     return render_template('dashboard.html')
 
-@app.route("/api/questionnaire")
+@application.route("/api/questionnaire")
 def get_questionnaire():
     result=[]
     return jsonify(questionnaire)
 
-@app.errorhandler(404)
+@application.errorhandler(404)
 def page_not_found(e):
     print("**********      404            ***************")
     print(request.headers.get('User-Agent'))
@@ -149,8 +150,13 @@ def page_not_found(e):
             print("returning 204")
             return "",204
     return redirect(ROOT_URL)
+
 #   App
 #-------------------------------
+
+application.wsgi_app = ProxyFix(application.wsgi_app)
 if __name__=='__main__':
-    app.run(host=app.config["HOST"],port=app.config["PORT"])
+    #application.run(host='0.0.0.0')
+    #application.run(host=application.config["HOST"])
+    application.run(host=application.config["HOST"],port=application.config["PORT"])
 #-------------------------------
