@@ -3,11 +3,12 @@
 #-------------------------------
 #Imports
 #-------------------------------
+from __future__ import print_function
 import sqlite3
 from flask import Flask,request,session,g,jsonify,redirect,url_for,abort,render_template,flash,make_response
 from contextlib import closing
 import uuid
-from __future__ import print_function
+
 #-------------------------------
 
 #-------------------------------
