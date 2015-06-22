@@ -72,8 +72,10 @@ def teardown_request(exception):
 
 @app.route('/')
 def index():
+        print("**********      ROOT          ***************")
         print(request.headers.get('User-Agent'))
         print(request.url)
+        print("**********************************************")
         if(request.headers.get('User-Agent').startswith('CaptiveNetworkSupport')):
             return "<HTML><HEAD><TITLE>Success</TITLE></HEAD><BODY>Success</BODY></HTML>"
         if("google" in request.base_url):
@@ -133,8 +135,10 @@ def get_questionnaire():
 
 @app.errorhandler(404)
 def page_not_found(e):
+    print("**********      404            ***************")
     print(request.headers.get('User-Agent'))
     print(request.url)
+    print("**********************************************")
     return redirect(ROOT_URL)
 #   App
 #-------------------------------
