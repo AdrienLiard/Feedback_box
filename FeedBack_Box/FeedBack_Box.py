@@ -143,8 +143,10 @@ def page_not_found(e):
     print(request.url)
     print("**********************************************")
     if("google" in request.base_url):
+            print("returning 204")
             return "",204
     if("android" in request.base_url):
+            print("returning 204")
             return "",204
     return redirect(ROOT_URL)
 #   App
