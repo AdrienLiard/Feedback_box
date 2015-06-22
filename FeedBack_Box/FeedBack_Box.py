@@ -114,7 +114,7 @@ def nextQuestion():
         g.db.execute("update interviews set last_question=? where guid=?",[question["id"],guid])
         g.db.commit()
     maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
-    print maxQuestionAnswered
+    print(maxQuestionAnswered)
     if(maxQuestionAnswered+1==len(questionnaire['questions'])):
         print(len(questionnaire['questions']))
         g.db.execute("update interviews set completed=1 where guid=?",[guid])
