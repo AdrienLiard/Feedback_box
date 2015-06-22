@@ -7,6 +7,7 @@ import sqlite3
 from flask import Flask,request,session,g,jsonify,redirect,url_for,abort,render_template,flash,make_response
 from contextlib import closing
 import uuid
+from __future__ import print_function
 #-------------------------------
 
 #-------------------------------
@@ -17,7 +18,7 @@ DEBUG=True
 PORT=80
 HOST='0.0.0.0'
 SECRET_KEY = 'MySuperSecretKey'
-ROOT_URL="http://feedback.box/"
+ROOT_URL="http://feedbackbox.io/"
 #-------------------------------
 
 #-------------------------------
@@ -71,11 +72,14 @@ def teardown_request(exception):
 
 @app.route('/')
 def index():
-        print request.headers.get('User-Agent')
+        print(request.headers.get('User-Agent'))
+        print(request.url)
         if(request.headers.get('User-Agent').startswith('CaptiveNetworkSupport')):
             return "<HTML><HEAD><TITLE>Success</TITLE></HEAD><BODY>Success</BODY></HTML>"
+        if("google" in request.base_url):
+            return "",204
         if(request.url_root!=ROOT_URL):
-            print request.url_root
+            print(request.url_root)
             return redirect(ROOT_URL)
         id=request.cookies.get('id')
         resp=make_response(render_template('questionnaire.html'))
@@ -94,7 +98,7 @@ def nextQuestion():
     if(question==None):
         question=questionnaire['questions'][0]
     else:
-        print question["id"]
+        print(question["id"])
         if(question["type"]=='open'):
             g.db.execute("insert into interviewsdata (guid,question_id,open_value) values (?,?,?)",[guid,question["id"],question["value"][0]])
             g.db.commit()
@@ -110,7 +114,7 @@ def nextQuestion():
     maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
     print maxQuestionAnswered
     if(maxQuestionAnswered+1==len(questionnaire['questions'])):
-        print len(questionnaire['questions'])
+        print(len(questionnaire['questions']))
         g.db.execute("update interviews set completed=1 where guid=?",[guid])
         g.db.commit()
         return jsonify({"id":-1})
@@ -129,7 +133,8 @@ def get_questionnaire():
 
 @app.errorhandler(404)
 def page_not_found(e):
-    print request.headers.get('User-Agent')
+    print(request.headers.get('User-Agent'))
+    print(request.url)
     return redirect(ROOT_URL)
 #   App
 #-------------------------------
