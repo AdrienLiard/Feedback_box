@@ -142,6 +142,10 @@ def page_not_found(e):
     print(request.headers.get('User-Agent'))
     print(request.url)
     print("**********************************************")
+    if("google" in request.base_url):
+            return "",204
+    if("android" in request.base_url):
+            return "",204
     return redirect(ROOT_URL)
 #   App
 #-------------------------------
