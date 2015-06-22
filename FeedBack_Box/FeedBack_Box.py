@@ -79,7 +79,7 @@ def index():
         print("**********************************************")
         if(request.headers.get('User-Agent').startswith('CaptiveNetworkSupport')):
             return "<HTML><HEAD><TITLE>Success</TITLE></HEAD><BODY>Success</BODY></HTML>"
-        if("google" in request.base_url):
+        if("google" in request.base_url | "android" in request.base_url):
             return "",204
         if(request.url_root!=ROOT_URL):
             print(request.url_root)
