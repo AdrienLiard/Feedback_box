@@ -46,8 +46,8 @@ questionnaire={
     {
     'id':2,
     'type':'single',
-    'libelle':u'Un commentaire sur la BVA Box?',
-    'responses':[{'value':1,'lib':u'FeedBack Box'},{'value':2,'lib':u'BVA Box'},{'value':3,'lib':u'CXB ox BVA'},{'value':4,'lib':u'BOCX BVA'},{'value':5,'lib':u'BOB'},{'value':6,'lib':u'SAT Box'}]
+    'libelle':u'Quel nom donneriez-vous à la BVA Box?',
+    'responses':[{'value':1,'lib':u'FeedBack Box'},{'value':2,'lib':u'BVA Box'},{'value':3,'lib':u'Sat Box'},{'value':4,'lib':u'BoCX BVA'},{'value':5,'lib':u'BOB'},{'value':6,'lib':u'Question Box'}]
     },
     {
     'id':3,
