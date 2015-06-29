@@ -20,7 +20,7 @@ DEBUG=True
 PORT=80
 HOST='0.0.0.0'
 SECRET_KEY = 'MySuperSecretKey'
-ROOT_URL="http://feedback.io"
+ROOT_URL="http://bvabox.fr"
 #-------------------------------
 
 #-------------------------------
@@ -34,25 +34,25 @@ questionnaire={
     'questions':[{
     'id':0,
     'type':'single',
-    'libelle':u'Avez-vous eu des difficultés à accéder à la FeedBack Box?',
+    'libelle':u'Avez-vous eu des difficultés à accéder à la BVA Box?',
     'responses':[{'value':1,'lib':'Oui'},{'value':2,'lib':'Non'}]
     },
     {
     'id':1,
     'type':'single',
-    'libelle':u'Recommanderiez la FeedBack Box?',
+    'libelle':u'Recommanderiez la BVA Box?',
     'responses':[{'value':1,'lib':u'Tout à fait'},{'value':2,'lib':u'Plutôt'},{'value':3,'lib':u'Plutôt pas'},{'value':4,'lib':u'Certainement pas'}]
     },
     {
     'id':2,
     'type':'single',
-    'libelle':u'Un commentaire sur la FeedBack Box?',
-    'responses':[{'value':1,'lib':u'FeedBack Box'},{'value':2,'lib':u'BVA Box'},{'value':3,'lib':u'CXB ox BVA'},{'value':4,'lib':u'BOCX BVA'},{'value':5,'lib':u'BOB'}]
+    'libelle':u'Un commentaire sur la BVA Box?',
+    'responses':[{'value':1,'lib':u'FeedBack Box'},{'value':2,'lib':u'BVA Box'},{'value':3,'lib':u'CXB ox BVA'},{'value':4,'lib':u'BOCX BVA'},{'value':5,'lib':u'BOB'},{'value':6,'lib':u'SAT Box'}]
     },
     {
     'id':3,
     'type':'open',
-    'libelle':u'Un commentaire sur la FeedBack Box?'}]
+    'libelle':u'Un commentaire sur la BVA Box?'}]
 }
 
 #-------------------------------
