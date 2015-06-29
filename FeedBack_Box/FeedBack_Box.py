@@ -90,9 +90,9 @@ def index():
             return "",204
         if("android" in request.base_url):
             return "",204
-        if(request.url_root!=ROOT_URL):
-            print(request.url_root)
-            return redirect(ROOT_URL)
+        # if(request.url_root!=ROOT_URL):
+        #     print(request.url_root)
+        #     return redirect(ROOT_URL)
         id=request.cookies.get('id')
         resp=make_response(render_template('questionnaire.html'))
         if(id==None):
