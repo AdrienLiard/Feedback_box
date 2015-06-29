@@ -1,14 +1,24 @@
 var app=angular.module('dashboard',[])
-	.controller('dashboardCtrl',['$scope','$http',function($scope,$http){
-		$scope.questionnaire={};
-		$http.get("/api/questionnaire").then(function(response){
-			console.log(response);
-			$scope.questionnaire=response.data;
-		});
-		console.log($scope.questionnaire);
+	.controller('dashboardCtrl',['$scope','$interval','$http',function($scope,$interval,$http){
+        $scope.questions={};
+        $scope.current=0;
+        var update=function(){
+            $http.get("/api/results").then(function(response){
+                $scope.questions=response.data.data;  
+                $scope.questions[$scope.current].show=true;
+                $scope.current+=1;
+                if($scope.current==$scope.questions.length){
+                    $scope.current=0;
+                }
+        });
+        };
+        $interval(update,10000);
+        update();
+        
+        
 
-	}])
-app.directive('barchart', function() {
+}]);
+app.directive('donut', function() {
 
     return {
 
@@ -18,22 +28,17 @@ app.directive('barchart', function() {
         replace: true,
         // observe and manipulate the DOM
         link: function($scope, element, attrs) {
-
-            var data = $scope[attrs.data],
-                xkey = $scope[attrs.xkey],
-                ykeys= $scope[attrs.ykeys],
-                labels= $scope[attrs.labels];
-
-            Morris.Bar({
+            var data=attrs["values"];
+          
+            Morris.Donut({
                     element: element,
-                    data: data,
-                    xkey: xkey,
-                    ykeys: ykeys,
-                    labels: labels
+                    data: angular.fromJson(data)
+                    
                 });
-
+            
         }
 
     };
 
 });
+

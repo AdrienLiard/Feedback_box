@@ -20,7 +20,7 @@ DEBUG=True
 PORT=80
 HOST='0.0.0.0'
 SECRET_KEY = 'MySuperSecretKey'
-ROOT_URL="http://feedbackbox.bva/"
+ROOT_URL="http://feedback.io"
 #-------------------------------
 
 #-------------------------------
@@ -33,18 +33,24 @@ application.config.from_object(__name__)
 questionnaire={
     'questions':[{
     'id':0,
-    'type':'multiple',
-    'libelle':u'Avez vous eu des difficultés à accéder à la FeedBack Box?',
+    'type':'single',
+    'libelle':u'Avez-vous eu des difficultés à accéder à la FeedBack Box?',
     'responses':[{'value':1,'lib':'Oui'},{'value':2,'lib':'Non'}]
     },
     {
     'id':1,
     'type':'single',
-    'libelle':u'Recommandiez la FeedBack Box?',
+    'libelle':u'Recommanderiez la FeedBack Box?',
     'responses':[{'value':1,'lib':u'Tout à fait'},{'value':2,'lib':u'Plutôt'},{'value':3,'lib':u'Plutôt pas'},{'value':4,'lib':u'Certainement pas'}]
     },
     {
     'id':2,
+    'type':'single',
+    'libelle':u'Un commentaire sur la FeedBack Box?',
+    'responses':[{'value':1,'lib':u'FeedBack Box'},{'value':2,'lib':u'BVA Box'},{'value':3,'lib':u'CXB ox BVA'},{'value':4,'lib':u'BOCX BVA'},{'value':5,'lib':u'BOB'}]
+    },
+    {
+    'id':3,
     'type':'open',
     'libelle':u'Un commentaire sur la FeedBack Box?'}]
 }
@@ -131,6 +137,23 @@ def nextQuestion():
 @application.route("/dashboard")
 def dashboard():
     return render_template('dashboard.html')
+
+@application.route("/api/results")
+def results():
+    result={"data":[]}
+    for question in questionnaire["questions"]:
+        cursor=g.db.cursor()
+        temp={'id':question['id'],'libelle':question["libelle"],'type':question["type"],'show':False,'data':[]}
+        if question["type"]=="open":
+            print("open")
+            for response in cursor.execute("select open_value from interviewsdata where question_id=?",[question["id"]]).fetchall():
+                temp["data"].append({'value':response[0]})             
+        else:
+            for response in question['responses']:
+                val=cursor.execute("select count(*) as ct from interviewsdata where question_id=? and closed_value=?",[question["id"],response['value']]).fetchone()[0]
+                temp["data"].append({'label':response['lib'],'code':response['value'],'value':val})
+        result["data"].append(temp)
+    return jsonify(result)
 
 @application.route("/api/questionnaire")
 def get_questionnaire():
