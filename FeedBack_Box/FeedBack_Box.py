@@ -41,13 +41,13 @@ questionnaire={
     'id':1,
     'type':'single',
     'libelle':u'Recommanderiez la BVA Box?',
-    'responses':[{'value':1,'lib':u'Tout à fait'},{'value':2,'lib':u'Plutôt'},{'value':3,'lib':u'Plutôt pas'},{'value':4,'lib':u'Certainement pas'}]
+    'responses':[{'value':1,'lib':u'Tout à fait'},{'value':2,'lib':u'Plutôt'},{'value':3,'lib':u'Plutôt pas'},{'value':4,'lib':u'Pas du tout'}]
     },
     {
     'id':2,
     'type':'single',
     'libelle':u'Quel nom donneriez-vous à la BVA Box?',
-    'responses':[{'value':1,'lib':u'FeedBack Box'},{'value':2,'lib':u'BVA Box'},{'value':3,'lib':u'Sat Box'},{'value':4,'lib':u'BoCX BVA'},{'value':5,'lib':u'BOB'},{'value':6,'lib':u'Question Box'}]
+    'responses':[{'value':1,'lib':u'FeedBack Box'},{'value':2,'lib':u'BVA Box'},{'value':3,'lib':u'Sat Box'},{'value':4,'lib':u'BoCX BVA'}]
     },
     {
     'id':3,
