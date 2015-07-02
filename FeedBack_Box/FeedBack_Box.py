@@ -51,7 +51,7 @@ questionnaire={
     },
     {
     'id':3,
-    'type':'single',
+    'type':'multiple',
     'libelle':u'Quelle boisson aimeriez-vous retrouver ?',
     'responses':[{'value':1,'lib':u'Bière'},{'value':2,'lib':u'Cocktail'},{'value':3,'lib':u'Alcool fort'},{'value':4,'lib':u'Vin'},{'value':5,'lib':u'Champagne'},{'value':6,'lib':u'Soft'}]
     },
@@ -107,6 +107,10 @@ def index():
             print(request.url_root)
             return redirect(ROOT_URL)
         id=request.cookies.get('id')
+        if(id!=None):
+            control=g.db.execute("select count(*) as ct from interviews where guid=?",id).fetchone()[0]
+            if(control==0):
+                id=None
         resp=make_response(render_template('questionnaire.html'))
         if(id==None):
             guid=str(uuid.uuid4())

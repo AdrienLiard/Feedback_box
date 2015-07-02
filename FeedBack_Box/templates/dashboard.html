@@ -34,7 +34,7 @@
 			<div ng-repeat='question in questions' >
 				
                 <!--Questions Ouvertes-->
-                <div ng-if="question.type=='open' && question.show" id="{{question.id}}" class="result">
+                <div ng-if="question.type=='open'" id="{{question.id}}" class="result">
                     <h2><i class="fa fa-question"></i>&nbsp;{{question.libelle}}</h2>
     				<table class="table table-bordered table-striped">
                         <thead><tr><th>Verbatim</th></tr></thead>
@@ -46,7 +46,7 @@
                     </table>
                 </div>
                 <!--Questions Single et multiples-->
-                <div ng-if="question.type!='open'  && question.show" id="{{question.id}}" class="result">
+                <div ng-if="question.type!='open'" id="{{question.id}}" class="result">
                     <h2><i class="fa fa-question"></i>&nbsp;{{question.libelle}}</h2>
                     <table class="table table-bordered table-striped">
                         <thead><tr><th>Réponses</th><th>Total</th></tr></thead>
