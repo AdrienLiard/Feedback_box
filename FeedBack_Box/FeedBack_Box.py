@@ -34,25 +34,38 @@ questionnaire={
     'questions':[{
     'id':0,
     'type':'single',
-    'libelle':u'Avez-vous eu des difficultés à accéder à la BVA Box?',
-    'responses':[{'value':1,'lib':'Oui'},{'value':2,'lib':'Non'}]
+    'libelle':u'Quel thème de soirée vous branche le plus pour la soirée BVA de janvier ?',
+    'responses':[{'value':1,'lib':'Thème coloriel'},{'value':2,'lib':'Thème d\'époque',{'value':3,'lib':'Thème musical'},{'value':4,'lib':'Thème voyage'}]
     },
     {
     'id':1,
-    'type':'single',
-    'libelle':u'Recommanderiez la BVA Box?',
+    'type':'open',
+    'libelle':u'Et si vous deviez proposer un thème fou, quel serait-il ? Surprenez-nous ?',
     'responses':[{'value':1,'lib':u'Tout à fait'},{'value':2,'lib':u'Plutôt'},{'value':3,'lib':u'Plutôt pas'},{'value':4,'lib':u'Pas du tout'}]
     },
     {
     'id':2,
     'type':'single',
-    'libelle':u'Quel nom donneriez-vous à la BVA Box?',
-    'responses':[{'value':1,'lib':u'FeedBack Box'},{'value':2,'lib':u'BVA Box'},{'value':3,'lib':u'Sat Box'},{'value':4,'lib':u'BoCX BVA'}]
+    'libelle':u'Souhaitez-vous participer à un challenge déguisement ?',
+    'responses':[{'value':1,'lib':u'Oh oui ! '},{'value':2,'lib':u'Non merci'}]
     },
     {
     'id':3,
+    'type':'single',
+    'libelle':u'Quelle boisson aimeriez-vous retrouver ?',
+    'responses':[{'value':1,'lib':u'Bière'},{'value':2,'lib':u'Cocktail'},{'value':3,'lib':u'Alcool fort'},{'value':4,'lib':u'Vin'},{'value':5,'lib':u'Champagne'},{'value':6,'lib':u'Soft'}]
+    },
+    {
+    'id':4,
+    'type':'single',
+    'libelle':u'Quelle ambiance musicale souhaitez-vous ?',
+    'responses':[{'value':1,'lib':u'Rock'},{'value':2,'lib':u'Pop'},{'value':3,'lib':u'Electro'},{'value':4,'lib':u'Musique du monde'},{'value':5,'lib':u'Variété'},{'value':6,'lib':u'Un mélange'}]
+    },
+     {
+    'id':5,
     'type':'open',
-    'libelle':u'Un commentaire sur la BVA Box?'}]
+    'libelle':u'Avez-vous des suggestions d\'animation (photo, nourriture, boisson, etc)?'
+    }]
 }
 
 #-------------------------------
