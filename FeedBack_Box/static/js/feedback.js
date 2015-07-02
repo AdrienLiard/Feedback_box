@@ -7,6 +7,9 @@ var app=angular.module('feedback',['ngRoute','checklist-model'])
 			}
 		});
 		$scope.nextQuestion=function(){
+			if($scope.question.type=='open' && question.value[0].length==0){
+				question.value[0]="";
+			}
 			$scope.question=questionService.getNextQuestion($scope.question).then(function(question){
 			$scope.question=question;
 			console.log(question);
@@ -28,14 +31,14 @@ var app=angular.module('feedback',['ngRoute','checklist-model'])
 					$scope.question.value.splice($scope.question.value.indexOf(val),1);
 				}
 			}
-			console.log($scope.question.value.length>0);
+			//console.log($scope.question.value.length>0);
 
 		};
 		
 		}])
 	.controller('end',['$scope','$location',function($scope,$location){
 		$scope.back=function(){
-			console.log("yo");
+			
 			$location.path('/');
 		};
 
