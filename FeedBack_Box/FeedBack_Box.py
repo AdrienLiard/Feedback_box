@@ -97,15 +97,15 @@ def index():
         print(request.headers.get('User-Agent'))
         print(request.url)
         print("**********************************************")
-        if(request.headers.get('User-Agent').startswith('CaptiveNetworkSupport')):
-            return "<HTML><HEAD><TITLE>Success</TITLE></HEAD><BODY>Success</BODY></HTML>"
-        if("google" in request.base_url):
-            return "",204
-        if("android" in request.base_url):
-            return "",204
-        # if(request.url_root!=ROOT_URL):
-        #     print(request.url_root)
-        #     return redirect(ROOT_URL)
+        # if(request.headers.get('User-Agent').startswith('CaptiveNetworkSupport')):
+        #     return "<HTML><HEAD><TITLE>Success</TITLE></HEAD><BODY>Success</BODY></HTML>"
+        # if("google" in request.base_url):
+        #     return "",204
+        # if("android" in request.base_url):
+        #     return "",204
+        if(request.url_root!=ROOT_URL):
+            print(request.url_root)
+            return redirect(ROOT_URL)
         id=request.cookies.get('id')
         resp=make_response(render_template('questionnaire.html'))
         if(id==None):
@@ -173,19 +173,19 @@ def get_questionnaire():
     result=[]
     return jsonify(questionnaire)
 
-@application.errorhandler(404)
-def page_not_found(e):
-    print("**********      404            ***************")
-    print(request.headers.get('User-Agent'))
-    print(request.url)
-    print("**********************************************")
-    if("google" in request.base_url):
-            print("returning 204")
-            return "",204
-    if("android" in request.base_url):
-            print("returning 204")
-            return "",204
-    return redirect(ROOT_URL)
+# @application.errorhandler(404)
+# def page_not_found(e):
+#     print("**********      404            ***************")
+#     print(request.headers.get('User-Agent'))
+#     print(request.url)
+#     print("**********************************************")
+#     if("google" in request.base_url):
+#             print("returning 204")
+#             return "",204
+#     if("android" in request.base_url):
+#             print("returning 204")
+#             return "",204
+#     return redirect(ROOT_URL)
 
 #   App
 #-------------------------------
