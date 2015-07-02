@@ -7,9 +7,7 @@ var app=angular.module('feedback',['ngRoute','checklist-model'])
 			}
 		});
 		$scope.nextQuestion=function(){
-			if($scope.question.type=='open' && question.value[0].length==0){
-				question.value[0]="";
-			}
+			
 			$scope.question=questionService.getNextQuestion($scope.question).then(function(question){
 			$scope.question=question;
 			console.log(question);
