@@ -35,7 +35,7 @@ questionnaire={
     'id':0,
     'type':'single',
     'libelle':u'Quel thème de soirée vous branche le plus pour la soirée BVA de janvier ?',
-    'responses':[{'value':1,'lib':u'Thème coloriel'},{'value':2,'lib':u'Thème d\'époque',{'value':3,'lib':u'Thème musical'},{'value':4,'lib':u'Thème voyage'}]
+    'responses':[{'value':1,'lib':u'Thème coloriel'},{'value':2,'lib':u'Thème d\'époque'},{'value':3,'lib':u'Thème musical'},{'value':4,'lib':u'Thème voyage'}]
     },
     {
     'id':1,
