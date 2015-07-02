@@ -108,7 +108,7 @@ def index():
             return redirect(ROOT_URL)
         id=request.cookies.get('id')
         if(id!=None):
-            control=g.db.execute("select count(*) as ct from interviews where guid=?",id).fetchone()[0]
+            control=g.db.execute("select count(*) as ct from interviews where guid=?",[id]).fetchone()[0]
             if(control==0):
                 id=None
         resp=make_response(render_template('questionnaire.html'))
