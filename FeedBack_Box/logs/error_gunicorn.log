@@ -46165,3 +46165,88 @@ UnicodeEncodeError: 'ascii' codec can't encode character u'\xe9' in position 539
 [2015-06-21 11:27:58 +0000] [2886] [INFO] Server is ready. Spawning workers
 [2015-06-21 11:27:58 +0000] [3037] [INFO] Booting worker with pid: 3037
 [2015-06-21 11:27:58 +0000] [3037] [INFO] Worker spawned (pid: 3037)
+[2015-07-03 15:50:02 +0000] [13455] [INFO] Starting gunicorn 19.3.0
+[2015-07-03 15:50:02 +0000] [13455] [INFO] Listening at: http://0.0.0.0:80 (13455)
+[2015-07-03 15:50:02 +0000] [13455] [INFO] Using worker: sync
+[2015-07-03 15:50:02 +0000] [13455] [INFO] Server is ready. Spawning workers
+[2015-07-03 15:50:02 +0000] [13461] [INFO] Booting worker with pid: 13461
+[2015-07-03 15:50:02 +0000] [13461] [INFO] Worker spawned (pid: 13461)
+[2015-07-03 16:10:50 +0000] [13455] [INFO] Handling signal: term
+[2015-07-03 16:10:50 +0000] [13461] [INFO] Worker exiting (pid: 13461)
+[2015-07-03 16:10:50 +0000] [13455] [INFO] Shutting down: Master
+[2015-07-03 16:11:17 +0000] [2092] [INFO] Starting gunicorn 19.3.0
+[2015-07-03 16:11:17 +0000] [2092] [INFO] Listening at: http://0.0.0.0:80 (2092)
+[2015-07-03 16:11:17 +0000] [2092] [INFO] Using worker: sync
+[2015-07-03 16:11:17 +0000] [2092] [INFO] Server is ready. Spawning workers
+[2015-07-03 16:11:17 +0000] [2198] [INFO] Booting worker with pid: 2198
+[2015-07-03 16:11:17 +0000] [2198] [INFO] Worker spawned (pid: 2198)
+[2015-07-03 16:12:37 +0000] [2092] [INFO] Handling signal: term
+[2015-07-03 16:12:37 +0000] [2198] [INFO] Worker exiting (pid: 2198)
+[2015-07-03 16:12:38 +0000] [2092] [INFO] Shutting down: Master
+[2015-07-03 16:12:59 +0000] [2100] [INFO] Starting gunicorn 19.3.0
+[2015-07-03 16:12:59 +0000] [2100] [INFO] Listening at: http://0.0.0.0:80 (2100)
+[2015-07-03 16:12:59 +0000] [2100] [INFO] Using worker: sync
+[2015-07-03 16:12:59 +0000] [2100] [INFO] Server is ready. Spawning workers
+[2015-07-03 16:12:59 +0000] [2164] [INFO] Booting worker with pid: 2164
+[2015-07-03 16:12:59 +0000] [2164] [INFO] Worker spawned (pid: 2164)
+[2015-07-03 16:13:30 +0000] [2100] [CRITICAL] WORKER TIMEOUT (pid:2164)
+[2015-07-03 16:13:30 +0000] [2164] [INFO] worker received SIGABRT signal
+[2015-07-03 16:13:30 +0000] [2164] [INFO] Worker exiting (pid: 2164)
+[2015-07-03 16:13:31 +0000] [2201] [INFO] Booting worker with pid: 2201
+[2015-07-03 16:13:31 +0000] [2201] [INFO] Worker spawned (pid: 2201)
+[2015-07-03 16:13:44 +0000] [2100] [INFO] Handling signal: term
+[2015-07-03 16:13:44 +0000] [2201] [INFO] Worker exiting (pid: 2201)
+[2015-07-03 16:13:45 +0000] [2100] [INFO] Shutting down: Master
+[2015-07-03 16:14:08 +0000] [2094] [INFO] Starting gunicorn 19.3.0
+[2015-07-03 16:14:08 +0000] [2094] [INFO] Listening at: http://0.0.0.0:80 (2094)
+[2015-07-03 16:14:08 +0000] [2094] [INFO] Using worker: sync
+[2015-07-03 16:14:08 +0000] [2094] [INFO] Server is ready. Spawning workers
+[2015-07-03 16:14:08 +0000] [2198] [INFO] Booting worker with pid: 2198
+[2015-07-03 16:14:08 +0000] [2198] [INFO] Worker spawned (pid: 2198)
+[2015-07-03 16:14:39 +0000] [2094] [CRITICAL] WORKER TIMEOUT (pid:2198)
+[2015-07-03 16:14:39 +0000] [2198] [INFO] worker received SIGABRT signal
+[2015-07-03 16:14:39 +0000] [2198] [INFO] Worker exiting (pid: 2198)
+[2015-07-03 16:14:39 +0000] [2331] [INFO] Booting worker with pid: 2331
+[2015-07-03 16:14:39 +0000] [2331] [INFO] Worker spawned (pid: 2331)
+[2015-07-03 16:20:18 +0000] [2094] [INFO] Handling signal: term
+[2015-07-03 16:20:18 +0000] [2331] [INFO] Worker exiting (pid: 2331)
+[2015-07-03 16:20:18 +0000] [2094] [INFO] Shutting down: Master
+[2015-07-03 16:21:03 +0000] [3592] [INFO] Starting gunicorn 19.3.0
+[2015-07-03 16:21:03 +0000] [3592] [INFO] Listening at: http://0.0.0.0:80 (3592)
+[2015-07-03 16:21:03 +0000] [3592] [INFO] Using worker: sync
+[2015-07-03 16:21:03 +0000] [3592] [INFO] Server is ready. Spawning workers
+[2015-07-03 16:21:03 +0000] [3597] [INFO] Booting worker with pid: 3597
+[2015-07-03 16:21:03 +0000] [3597] [INFO] Worker spawned (pid: 3597)
+[2015-07-03 16:22:35 +0000] [3592] [CRITICAL] WORKER TIMEOUT (pid:3597)
+[2015-07-03 16:22:35 +0000] [3597] [INFO] worker received SIGABRT signal
+[2015-07-03 16:22:35 +0000] [3597] [INFO] Worker exiting (pid: 3597)
+[2015-07-03 16:22:35 +0000] [3734] [INFO] Booting worker with pid: 3734
+[2015-07-03 16:22:35 +0000] [3734] [INFO] Worker spawned (pid: 3734)
+[2015-07-03 16:24:03 +0000] [3592] [CRITICAL] WORKER TIMEOUT (pid:3734)
+[2015-07-03 16:24:03 +0000] [3734] [INFO] worker received SIGABRT signal
+[2015-07-03 16:24:03 +0000] [3734] [INFO] Worker exiting (pid: 3734)
+[2015-07-03 16:24:03 +0000] [3861] [INFO] Booting worker with pid: 3861
+[2015-07-03 16:24:03 +0000] [3861] [INFO] Worker spawned (pid: 3861)
+[2015-07-03 16:25:50 +0000] [3592] [CRITICAL] WORKER TIMEOUT (pid:3861)
+[2015-07-03 16:25:50 +0000] [3861] [INFO] worker received SIGABRT signal
+[2015-07-03 16:25:50 +0000] [3861] [INFO] Worker exiting (pid: 3861)
+[2015-07-03 16:25:50 +0000] [4009] [INFO] Booting worker with pid: 4009
+[2015-07-03 16:25:50 +0000] [4009] [INFO] Worker spawned (pid: 4009)
+[2015-07-03 16:26:21 +0000] [3592] [CRITICAL] WORKER TIMEOUT (pid:4009)
+[2015-07-03 16:26:21 +0000] [4009] [INFO] worker received SIGABRT signal
+[2015-07-03 16:26:21 +0000] [4009] [INFO] Worker exiting (pid: 4009)
+[2015-07-03 16:26:21 +0000] [4067] [INFO] Booting worker with pid: 4067
+[2015-07-03 16:26:21 +0000] [4067] [INFO] Worker spawned (pid: 4067)
+[2015-07-03 16:26:52 +0000] [3592] [CRITICAL] WORKER TIMEOUT (pid:4067)
+[2015-07-03 16:26:52 +0000] [4067] [INFO] worker received SIGABRT signal
+[2015-07-03 16:26:52 +0000] [4067] [INFO] Worker exiting (pid: 4067)
+[2015-07-03 16:26:53 +0000] [4100] [INFO] Booting worker with pid: 4100
+[2015-07-03 16:26:53 +0000] [4100] [INFO] Worker spawned (pid: 4100)
+[2015-07-03 16:27:24 +0000] [3592] [CRITICAL] WORKER TIMEOUT (pid:4100)
+[2015-07-03 16:27:24 +0000] [4100] [INFO] worker received SIGABRT signal
+[2015-07-03 16:27:24 +0000] [4100] [INFO] Worker exiting (pid: 4100)
+[2015-07-03 16:27:24 +0000] [4161] [INFO] Booting worker with pid: 4161
+[2015-07-03 16:27:24 +0000] [4161] [INFO] Worker spawned (pid: 4161)
+[2015-07-03 16:28:04 +0000] [3592] [INFO] Handling signal: term
+[2015-07-03 16:28:04 +0000] [4161] [INFO] Worker exiting (pid: 4161)
+[2015-07-03 16:28:04 +0000] [3592] [INFO] Shutting down: Master

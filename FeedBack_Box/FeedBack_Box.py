@@ -17,7 +17,7 @@ import uuid
 #-------------------------------
 DATABASE='data/feedback_box.db'
 DEBUG=True
-PORT=80
+PORT=8080
 HOST='0.0.0.0'
 SECRET_KEY = 'MySuperSecretKey'
 ROOT_URL="http://bvabox.fr/"
@@ -183,19 +183,19 @@ def get_questionnaire():
     result=[]
     return jsonify(questionnaire)
 
-# @application.errorhandler(404)
-# def page_not_found(e):
-#     print("**********      404            ***************")
-#     print(request.headers.get('User-Agent'))
-#     print(request.url)
-#     print("**********************************************")
-#     if("google" in request.base_url):
-#             print("returning 204")
-#             return "",204
-#     if("android" in request.base_url):
-#             print("returning 204")
-#             return "",204
-#     return redirect(ROOT_URL)
+@application.errorhandler(404)
+def page_not_found(e):
+    #print("**********      404            ***************")
+    #print(request.headers.get('User-Agent'))
+    #print(request.url)
+    #print("**********************************************")
+    #if("google" in request.base_url):
+            #print("returning 204")
+            #return "",204
+    #if("android" in request.base_url):
+            #print("returning 204")
+            #return "",204
+    return redirect(ROOT_URL)
 
 #   App
 #-------------------------------
