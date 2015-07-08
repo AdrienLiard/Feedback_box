@@ -35,14 +35,14 @@ questionnaire={
     'id':0,
     'type':'single',
     'isMandatory':False,
-    'libelle':u'Quel thème de soirée vous branche le plus pour la soirée BVA de janvier ?',
+    'libelle':u'Si on faisait un thème pour la soirée 2016... Lequel vous brancherait le plus ?',
     'responses':[{'value':1,'lib':u'Thème coloriel'},{'value':2,'lib':u'Thème d\'époque'},{'value':3,'lib':u'Thème musical'},{'value':4,'lib':u'Thème voyage'}]
     },
     {
     'id':1,
     'type':'open',
      'isMandatory':False,
-    'libelle':u'Et si vous deviez proposer un thème fou, quel serait-il ? Surprenez-nous ?',
+    'libelle':u'Et si vous deviez proposer un thème fou, quel serait-il ? Surprenez-nous !',
     'responses':[{'value':1,'lib':u'Tout à fait'},{'value':2,'lib':u'Plutôt'},{'value':3,'lib':u'Plutôt pas'},{'value':4,'lib':u'Pas du tout'}]
     },
     {
@@ -56,8 +56,8 @@ questionnaire={
     'id':3,
     'type':'multiple',
      'isMandatory':False,
-    'libelle':u'Quelle boisson aimeriez-vous retrouver ?',
-    'responses':[{'value':1,'lib':u'Bière'},{'value':2,'lib':u'Cocktail'},{'value':3,'lib':u'Alcool fort'},{'value':4,'lib':u'Vin'},{'value':5,'lib':u'Champagne'},{'value':6,'lib':u'Soft'}]
+    'libelle':u'Quelle boisson aimeriez-vous retrouver ? (avec modération!)',
+    'responses':[{'value':1,'lib':u'Bière'},{'value':2,'lib':u'Cocktails'},{'value':3,'lib':u'Alcool fort'},{'value':4,'lib':u'Vin'},{'value':5,'lib':u'Champagne'},{'value':6,'lib':u'Soft'}]
     },
     {
     'id':4,
@@ -70,7 +70,7 @@ questionnaire={
     'id':5,
     'type':'open',
      'isMandatory':False,
-    'libelle':u'Avez-vous des suggestions d\'animation (photo, nourriture, boisson, etc)?'
+    'libelle':u'Avez-vous des suggestions d\'animations (photo, nourriture, boisson, etc)?'
     }]
 }
 

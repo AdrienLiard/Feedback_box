@@ -46250,3 +46250,971 @@ UnicodeEncodeError: 'ascii' codec can't encode character u'\xe9' in position 539
 [2015-07-03 16:28:04 +0000] [3592] [INFO] Handling signal: term
 [2015-07-03 16:28:04 +0000] [4161] [INFO] Worker exiting (pid: 4161)
 [2015-07-03 16:28:04 +0000] [3592] [INFO] Shutting down: Master
+[2015-07-03 17:29:14 +0000] [2540] [INFO] Starting gunicorn 19.3.0
+[2015-07-03 17:29:14 +0000] [2540] [INFO] Listening at: http://0.0.0.0:8080 (2540)
+[2015-07-03 17:29:14 +0000] [2540] [INFO] Using worker: sync
+[2015-07-03 17:29:14 +0000] [2540] [INFO] Server is ready. Spawning workers
+[2015-07-03 17:29:14 +0000] [2549] [INFO] Booting worker with pid: 2549
+[2015-07-03 17:29:14 +0000] [2549] [INFO] Worker spawned (pid: 2549)
+[2015-07-03 17:29:14 +0000] [2550] [INFO] Booting worker with pid: 2550
+[2015-07-03 17:29:14 +0000] [2550] [INFO] Worker spawned (pid: 2550)
+[2015-07-03 17:29:14 +0000] [2551] [INFO] Booting worker with pid: 2551
+[2015-07-03 17:29:14 +0000] [2551] [INFO] Worker spawned (pid: 2551)
+[2015-07-03 17:37:00 +0000] [2551] [INFO] worker received INT or QUIT signal
+[2015-07-03 17:37:00 +0000] [2549] [INFO] worker received INT or QUIT signal
+[2015-07-03 17:37:00 +0000] [2550] [INFO] worker received INT or QUIT signal
+[2015-07-03 17:37:00 +0000] [2540] [INFO] Handling signal: int
+[2015-07-03 17:37:00 +0000] [2551] [INFO] worker received INT or QUIT signal
+[2015-07-03 17:37:00 +0000] [2550] [INFO] worker received INT or QUIT signal
+[2015-07-03 17:37:00 +0000] [2549] [INFO] worker received INT or QUIT signal
+[2015-07-03 17:37:00 +0000] [2550] [INFO] Worker exiting (pid: 2550)
+[2015-07-03 17:37:00 +0000] [2549] [INFO] Worker exiting (pid: 2549)
+[2015-07-03 17:37:00 +0000] [2551] [INFO] Worker exiting (pid: 2551)
+[2015-07-03 17:37:00 +0000] [2540] [INFO] Shutting down: Master
+[2015-07-03 17:38:00 +0000] [2098] [INFO] Starting gunicorn 19.3.0
+[2015-07-03 17:38:00 +0000] [2098] [INFO] Listening at: http://0.0.0.0:8080 (2098)
+[2015-07-03 17:38:00 +0000] [2098] [INFO] Using worker: sync
+[2015-07-03 17:38:00 +0000] [2098] [INFO] Server is ready. Spawning workers
+[2015-07-03 17:38:00 +0000] [2239] [INFO] Booting worker with pid: 2239
+[2015-07-03 17:38:00 +0000] [2239] [INFO] Worker spawned (pid: 2239)
+[2015-07-03 17:38:00 +0000] [2240] [INFO] Booting worker with pid: 2240
+[2015-07-03 17:38:00 +0000] [2240] [INFO] Worker spawned (pid: 2240)
+[2015-07-03 17:38:01 +0000] [2241] [INFO] Booting worker with pid: 2241
+[2015-07-03 17:38:01 +0000] [2241] [INFO] Worker spawned (pid: 2241)
+[2015-07-03 17:38:19 +0000] [2098] [CRITICAL] WORKER TIMEOUT (pid:2240)
+[2015-07-03 17:38:19 +0000] [2098] [CRITICAL] WORKER TIMEOUT (pid:2241)
+[2015-07-03 17:38:19 +0000] [2098] [CRITICAL] WORKER TIMEOUT (pid:2239)
+[2015-07-03 17:38:19 +0000] [2240] [INFO] worker received SIGABRT signal
+[2015-07-03 17:38:19 +0000] [2241] [INFO] worker received SIGABRT signal
+[2015-07-03 17:38:19 +0000] [2241] [INFO] Worker exiting (pid: 2241)
+[2015-07-03 17:38:19 +0000] [2239] [INFO] worker received SIGABRT signal
+[2015-07-03 17:38:19 +0000] [2239] [INFO] Worker exiting (pid: 2239)
+[2015-07-03 17:38:19 +0000] [2240] [INFO] Worker exiting (pid: 2240)
+[2015-07-03 17:38:19 +0000] [2301] [INFO] Booting worker with pid: 2301
+[2015-07-03 17:38:19 +0000] [2301] [INFO] Worker spawned (pid: 2301)
+[2015-07-03 17:38:19 +0000] [2302] [INFO] Booting worker with pid: 2302
+[2015-07-03 17:38:19 +0000] [2302] [INFO] Worker spawned (pid: 2302)
+[2015-07-03 17:38:19 +0000] [2303] [INFO] Booting worker with pid: 2303
+[2015-07-03 17:38:19 +0000] [2303] [INFO] Worker spawned (pid: 2303)
+[2015-07-03 17:56:55 +0000] [2098] [INFO] Handling signal: term
+[2015-07-03 17:56:55 +0000] [2301] [INFO] Worker exiting (pid: 2301)
+[2015-07-03 17:56:55 +0000] [2302] [INFO] Worker exiting (pid: 2302)
+[2015-07-03 17:56:55 +0000] [2303] [INFO] Worker exiting (pid: 2303)
+[2015-07-03 17:56:56 +0000] [2098] [INFO] Shutting down: Master
+[2015-07-03 17:57:16 +0000] [2202] [INFO] Starting gunicorn 19.3.0
+[2015-07-03 17:57:16 +0000] [2202] [INFO] Listening at: http://0.0.0.0:8080 (2202)
+[2015-07-03 17:57:16 +0000] [2202] [INFO] Using worker: sync
+[2015-07-03 17:57:16 +0000] [2202] [INFO] Server is ready. Spawning workers
+[2015-07-03 17:57:16 +0000] [2341] [INFO] Booting worker with pid: 2341
+[2015-07-03 17:57:16 +0000] [2341] [INFO] Worker spawned (pid: 2341)
+[2015-07-03 17:57:16 +0000] [2342] [INFO] Booting worker with pid: 2342
+[2015-07-03 17:57:16 +0000] [2342] [INFO] Worker spawned (pid: 2342)
+[2015-07-03 17:57:16 +0000] [2343] [INFO] Booting worker with pid: 2343
+[2015-07-03 17:57:16 +0000] [2343] [INFO] Worker spawned (pid: 2343)
+[2015-07-03 17:57:41 +0000] [2202] [CRITICAL] WORKER TIMEOUT (pid:2341)
+[2015-07-03 17:57:41 +0000] [2202] [CRITICAL] WORKER TIMEOUT (pid:2342)
+[2015-07-03 17:57:41 +0000] [2341] [INFO] worker received SIGABRT signal
+[2015-07-03 17:57:41 +0000] [2202] [CRITICAL] WORKER TIMEOUT (pid:2343)
+[2015-07-03 17:57:41 +0000] [2341] [INFO] Worker exiting (pid: 2341)
+[2015-07-03 17:57:41 +0000] [2343] [INFO] worker received SIGABRT signal
+[2015-07-03 17:57:41 +0000] [2343] [INFO] Worker exiting (pid: 2343)
+[2015-07-03 17:57:41 +0000] [2342] [INFO] worker received SIGABRT signal
+[2015-07-03 17:57:41 +0000] [2342] [INFO] Worker exiting (pid: 2342)
+[2015-07-03 17:57:41 +0000] [2375] [INFO] Booting worker with pid: 2375
+[2015-07-03 17:57:41 +0000] [2375] [INFO] Worker spawned (pid: 2375)
+[2015-07-03 17:57:41 +0000] [2376] [INFO] Booting worker with pid: 2376
+[2015-07-03 17:57:41 +0000] [2376] [INFO] Worker spawned (pid: 2376)
+[2015-07-03 17:57:41 +0000] [2377] [INFO] Booting worker with pid: 2377
+[2015-07-03 17:57:41 +0000] [2377] [INFO] Worker spawned (pid: 2377)
+[2015-07-03 18:09:08 +0000] [2202] [INFO] Handling signal: term
+[2015-07-03 18:09:08 +0000] [2376] [INFO] Worker exiting (pid: 2376)
+[2015-07-03 18:09:08 +0000] [2377] [INFO] Worker exiting (pid: 2377)
+[2015-07-03 18:09:08 +0000] [2375] [INFO] Worker exiting (pid: 2375)
+[2015-07-03 18:09:08 +0000] [2202] [INFO] Shutting down: Master
+[2015-07-03 18:10:26 +0000] [2196] [INFO] Starting gunicorn 19.3.0
+[2015-07-03 18:10:26 +0000] [2196] [INFO] Listening at: http://0.0.0.0:8080 (2196)
+[2015-07-03 18:10:26 +0000] [2196] [INFO] Using worker: sync
+[2015-07-03 18:10:26 +0000] [2196] [INFO] Server is ready. Spawning workers
+[2015-07-03 18:10:26 +0000] [2336] [INFO] Booting worker with pid: 2336
+[2015-07-03 18:10:26 +0000] [2336] [INFO] Worker spawned (pid: 2336)
+[2015-07-03 18:10:26 +0000] [2337] [INFO] Booting worker with pid: 2337
+[2015-07-03 18:10:26 +0000] [2337] [INFO] Worker spawned (pid: 2337)
+[2015-07-03 18:10:26 +0000] [2338] [INFO] Booting worker with pid: 2338
+[2015-07-03 18:10:26 +0000] [2338] [INFO] Worker spawned (pid: 2338)
+[2015-07-03 18:14:00 +0000] [2196] [CRITICAL] WORKER TIMEOUT (pid:2336)
+[2015-07-03 18:14:00 +0000] [2336] [INFO] worker received SIGABRT signal
+[2015-07-03 18:14:00 +0000] [2336] [INFO] Worker exiting (pid: 2336)
+[2015-07-03 18:14:00 +0000] [2196] [CRITICAL] WORKER TIMEOUT (pid:2337)
+[2015-07-03 18:14:00 +0000] [2196] [CRITICAL] WORKER TIMEOUT (pid:2338)
+[2015-07-03 18:14:00 +0000] [2337] [INFO] worker received SIGABRT signal
+[2015-07-03 18:14:00 +0000] [2337] [INFO] Worker exiting (pid: 2337)
+[2015-07-03 18:14:00 +0000] [2338] [INFO] worker received SIGABRT signal
+[2015-07-03 18:14:00 +0000] [2338] [INFO] Worker exiting (pid: 2338)
+[2015-07-03 18:14:00 +0000] [8288] [INFO] Booting worker with pid: 8288
+[2015-07-03 18:14:00 +0000] [8288] [INFO] Worker spawned (pid: 8288)
+[2015-07-03 18:14:00 +0000] [8289] [INFO] Booting worker with pid: 8289
+[2015-07-03 18:14:00 +0000] [8289] [INFO] Worker spawned (pid: 8289)
+[2015-07-03 18:14:00 +0000] [8290] [INFO] Booting worker with pid: 8290
+[2015-07-03 18:14:00 +0000] [8290] [INFO] Worker spawned (pid: 8290)
+[2015-07-03 18:20:16 +0000] [2196] [INFO] Handling signal: term
+[2015-07-03 18:20:16 +0000] [8288] [INFO] Worker exiting (pid: 8288)
+[2015-07-03 18:20:16 +0000] [8290] [INFO] Worker exiting (pid: 8290)
+[2015-07-03 18:20:16 +0000] [8289] [INFO] Worker exiting (pid: 8289)
+[2015-07-03 18:20:16 +0000] [2196] [INFO] Shutting down: Master
+[2015-07-03 18:20:40 +0000] [2137] [INFO] Starting gunicorn 19.3.0
+[2015-07-03 18:20:40 +0000] [2137] [INFO] Listening at: http://0.0.0.0:8080 (2137)
+[2015-07-03 18:20:40 +0000] [2137] [INFO] Using worker: sync
+[2015-07-03 18:20:40 +0000] [2137] [INFO] Server is ready. Spawning workers
+[2015-07-03 18:20:40 +0000] [2278] [INFO] Booting worker with pid: 2278
+[2015-07-03 18:20:40 +0000] [2278] [INFO] Worker spawned (pid: 2278)
+[2015-07-03 18:20:40 +0000] [2279] [INFO] Booting worker with pid: 2279
+[2015-07-03 18:20:40 +0000] [2279] [INFO] Worker spawned (pid: 2279)
+[2015-07-03 18:20:40 +0000] [2280] [INFO] Booting worker with pid: 2280
+[2015-07-03 18:20:40 +0000] [2280] [INFO] Worker spawned (pid: 2280)
+[2015-07-06 10:04:54 +0000] [2137] [CRITICAL] WORKER TIMEOUT (pid:2280)
+[2015-07-06 10:04:54 +0000] [2137] [CRITICAL] WORKER TIMEOUT (pid:2278)
+[2015-07-06 10:04:54 +0000] [2280] [INFO] worker received SIGABRT signal
+[2015-07-06 10:04:54 +0000] [2137] [CRITICAL] WORKER TIMEOUT (pid:2279)
+[2015-07-06 10:04:54 +0000] [2280] [INFO] Worker exiting (pid: 2280)
+[2015-07-06 10:04:54 +0000] [2278] [INFO] worker received SIGABRT signal
+[2015-07-06 10:04:54 +0000] [2278] [INFO] Worker exiting (pid: 2278)
+[2015-07-06 10:04:54 +0000] [2279] [INFO] worker received SIGABRT signal
+[2015-07-06 10:04:54 +0000] [2279] [INFO] Worker exiting (pid: 2279)
+[2015-07-06 10:04:54 +0000] [2312] [INFO] Booting worker with pid: 2312
+[2015-07-06 10:04:54 +0000] [2312] [INFO] Worker spawned (pid: 2312)
+[2015-07-06 10:04:54 +0000] [2313] [INFO] Booting worker with pid: 2313
+[2015-07-06 10:04:54 +0000] [2313] [INFO] Worker spawned (pid: 2313)
+[2015-07-06 10:04:54 +0000] [2314] [INFO] Booting worker with pid: 2314
+[2015-07-06 10:04:54 +0000] [2314] [INFO] Worker spawned (pid: 2314)
+[2015-07-06 10:05:52 +0000] [2312] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/contrib/fixers.py", line 148, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Feedback_box/FeedBack_Box/FeedBack_Box.py", line 149, in nextQuestion
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+[2015-07-06 10:05:52 +0000] [2314] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/contrib/fixers.py", line 148, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Feedback_box/FeedBack_Box/FeedBack_Box.py", line 149, in nextQuestion
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+[2015-07-06 10:05:52 +0000] [2313] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/contrib/fixers.py", line 148, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Feedback_box/FeedBack_Box/FeedBack_Box.py", line 149, in nextQuestion
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+[2015-07-06 10:13:08 +0000] [2137] [INFO] Handling signal: term
+[2015-07-06 10:13:08 +0000] [2312] [INFO] Worker exiting (pid: 2312)
+[2015-07-06 10:13:08 +0000] [2313] [INFO] Worker exiting (pid: 2313)
+[2015-07-06 10:13:08 +0000] [2314] [INFO] Worker exiting (pid: 2314)
+[2015-07-06 10:13:08 +0000] [2137] [INFO] Shutting down: Master
+[2015-07-06 10:13:32 +0000] [2138] [INFO] Starting gunicorn 19.3.0
+[2015-07-06 10:13:32 +0000] [2138] [INFO] Listening at: http://0.0.0.0:8080 (2138)
+[2015-07-06 10:13:32 +0000] [2138] [INFO] Using worker: sync
+[2015-07-06 10:13:32 +0000] [2138] [INFO] Server is ready. Spawning workers
+[2015-07-06 10:13:32 +0000] [2277] [INFO] Booting worker with pid: 2277
+[2015-07-06 10:13:32 +0000] [2277] [INFO] Worker spawned (pid: 2277)
+[2015-07-06 10:13:32 +0000] [2279] [INFO] Booting worker with pid: 2279
+[2015-07-06 10:13:32 +0000] [2279] [INFO] Worker spawned (pid: 2279)
+[2015-07-06 10:13:32 +0000] [2281] [INFO] Booting worker with pid: 2281
+[2015-07-06 10:13:32 +0000] [2281] [INFO] Worker spawned (pid: 2281)
+[2015-07-06 10:13:50 +0000] [2138] [CRITICAL] WORKER TIMEOUT (pid:2281)
+[2015-07-06 10:13:50 +0000] [2138] [CRITICAL] WORKER TIMEOUT (pid:2277)
+[2015-07-06 10:13:50 +0000] [2281] [INFO] worker received SIGABRT signal
+[2015-07-06 10:13:50 +0000] [2138] [CRITICAL] WORKER TIMEOUT (pid:2279)
+[2015-07-06 10:13:50 +0000] [2281] [INFO] Worker exiting (pid: 2281)
+[2015-07-06 10:13:50 +0000] [2277] [INFO] worker received SIGABRT signal
+[2015-07-06 10:13:50 +0000] [2277] [INFO] Worker exiting (pid: 2277)
+[2015-07-06 10:13:50 +0000] [2279] [INFO] worker received SIGABRT signal
+[2015-07-06 10:13:50 +0000] [2279] [INFO] Worker exiting (pid: 2279)
+[2015-07-06 10:13:50 +0000] [2311] [INFO] Booting worker with pid: 2311
+[2015-07-06 10:13:50 +0000] [2311] [INFO] Worker spawned (pid: 2311)
+[2015-07-06 10:13:50 +0000] [2313] [INFO] Booting worker with pid: 2313
+[2015-07-06 10:13:50 +0000] [2313] [INFO] Worker spawned (pid: 2313)
+[2015-07-06 10:13:50 +0000] [2314] [INFO] Booting worker with pid: 2314
+[2015-07-06 10:13:50 +0000] [2314] [INFO] Worker spawned (pid: 2314)
+[2015-07-06 10:14:46 +0000] [2138] [INFO] Handling signal: term
+[2015-07-06 10:14:46 +0000] [2313] [INFO] Worker exiting (pid: 2313)
+[2015-07-06 10:14:46 +0000] [2311] [INFO] Worker exiting (pid: 2311)
+[2015-07-06 10:14:46 +0000] [2314] [INFO] Worker exiting (pid: 2314)
+[2015-07-06 10:14:46 +0000] [2138] [INFO] Shutting down: Master
+[2015-07-06 10:16:04 +0000] [2169] [INFO] Starting gunicorn 19.3.0
+[2015-07-06 10:16:04 +0000] [2169] [INFO] Listening at: http://0.0.0.0:8080 (2169)
+[2015-07-06 10:16:04 +0000] [2169] [INFO] Using worker: sync
+[2015-07-06 10:16:04 +0000] [2169] [INFO] Server is ready. Spawning workers
+[2015-07-06 10:16:04 +0000] [2308] [INFO] Booting worker with pid: 2308
+[2015-07-06 10:16:04 +0000] [2308] [INFO] Worker spawned (pid: 2308)
+[2015-07-06 10:16:04 +0000] [2309] [INFO] Booting worker with pid: 2309
+[2015-07-06 10:16:04 +0000] [2309] [INFO] Worker spawned (pid: 2309)
+[2015-07-06 10:16:04 +0000] [2310] [INFO] Booting worker with pid: 2310
+[2015-07-06 10:16:04 +0000] [2310] [INFO] Worker spawned (pid: 2310)
+[2015-07-06 10:16:02 +0000] [2132] [INFO] Starting gunicorn 19.3.0
+[2015-07-06 10:16:02 +0000] [2132] [INFO] Listening at: http://0.0.0.0:8080 (2132)
+[2015-07-06 10:16:02 +0000] [2132] [INFO] Using worker: sync
+[2015-07-06 10:16:02 +0000] [2132] [INFO] Server is ready. Spawning workers
+[2015-07-06 10:16:02 +0000] [2300] [INFO] Booting worker with pid: 2300
+[2015-07-06 10:16:02 +0000] [2300] [INFO] Worker spawned (pid: 2300)
+[2015-07-06 10:16:02 +0000] [2301] [INFO] Booting worker with pid: 2301
+[2015-07-06 10:16:02 +0000] [2301] [INFO] Worker spawned (pid: 2301)
+[2015-07-06 10:16:02 +0000] [2302] [INFO] Booting worker with pid: 2302
+[2015-07-06 10:16:02 +0000] [2302] [INFO] Worker spawned (pid: 2302)
+[2015-07-06 10:19:56 +0000] [2302] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/contrib/fixers.py", line 148, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Feedback_box/FeedBack_Box/FeedBack_Box.py", line 149, in nextQuestion
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+[2015-07-06 10:19:56 +0000] [2300] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/contrib/fixers.py", line 148, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Feedback_box/FeedBack_Box/FeedBack_Box.py", line 149, in nextQuestion
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+[2015-07-06 10:19:56 +0000] [2301] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/contrib/fixers.py", line 148, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Feedback_box/FeedBack_Box/FeedBack_Box.py", line 149, in nextQuestion
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+[2015-07-06 10:17:20 +0000] [2140] [INFO] Starting gunicorn 19.3.0
+[2015-07-06 10:17:20 +0000] [2140] [INFO] Listening at: http://0.0.0.0:8080 (2140)
+[2015-07-06 10:17:20 +0000] [2140] [INFO] Using worker: sync
+[2015-07-06 10:17:20 +0000] [2140] [INFO] Server is ready. Spawning workers
+[2015-07-06 10:17:20 +0000] [2280] [INFO] Booting worker with pid: 2280
+[2015-07-06 10:17:20 +0000] [2280] [INFO] Worker spawned (pid: 2280)
+[2015-07-06 10:17:20 +0000] [2281] [INFO] Booting worker with pid: 2281
+[2015-07-06 10:17:20 +0000] [2281] [INFO] Worker spawned (pid: 2281)
+[2015-07-06 10:17:20 +0000] [2282] [INFO] Booting worker with pid: 2282
+[2015-07-06 10:17:20 +0000] [2282] [INFO] Worker spawned (pid: 2282)
+[2015-07-06 10:30:24 +0000] [2140] [CRITICAL] WORKER TIMEOUT (pid:2280)
+[2015-07-06 10:30:24 +0000] [2140] [CRITICAL] WORKER TIMEOUT (pid:2281)
+[2015-07-06 10:30:24 +0000] [2280] [INFO] worker received SIGABRT signal
+[2015-07-06 10:30:24 +0000] [2281] [INFO] worker received SIGABRT signal
+[2015-07-06 10:30:24 +0000] [2280] [INFO] Worker exiting (pid: 2280)
+[2015-07-06 10:30:24 +0000] [2281] [INFO] Worker exiting (pid: 2281)
+[2015-07-06 10:30:25 +0000] [2313] [INFO] Booting worker with pid: 2313
+[2015-07-06 10:30:25 +0000] [2313] [INFO] Worker spawned (pid: 2313)
+[2015-07-06 10:30:25 +0000] [2314] [INFO] Booting worker with pid: 2314
+[2015-07-06 10:30:25 +0000] [2314] [INFO] Worker spawned (pid: 2314)
+[2015-07-06 10:43:15 +0000] [2314] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/contrib/fixers.py", line 148, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Feedback_box/FeedBack_Box/FeedBack_Box.py", line 149, in nextQuestion
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+[2015-07-06 10:43:15 +0000] [2313] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/contrib/fixers.py", line 148, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Feedback_box/FeedBack_Box/FeedBack_Box.py", line 149, in nextQuestion
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+[2015-07-06 10:43:15 +0000] [2282] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/contrib/fixers.py", line 148, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Feedback_box/FeedBack_Box/FeedBack_Box.py", line 149, in nextQuestion
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+[2015-07-06 11:21:45 +0000] [2314] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/contrib/fixers.py", line 148, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Feedback_box/FeedBack_Box/FeedBack_Box.py", line 149, in nextQuestion
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+[2015-07-06 11:21:45 +0000] [2282] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/contrib/fixers.py", line 148, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Feedback_box/FeedBack_Box/FeedBack_Box.py", line 149, in nextQuestion
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+[2015-07-06 11:21:45 +0000] [2313] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/contrib/fixers.py", line 148, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Feedback_box/FeedBack_Box/FeedBack_Box.py", line 149, in nextQuestion
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+[2015-07-06 12:44:52 +0000] [2282] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/contrib/fixers.py", line 148, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Feedback_box/FeedBack_Box/FeedBack_Box.py", line 149, in nextQuestion
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+[2015-07-06 12:44:52 +0000] [2313] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/contrib/fixers.py", line 148, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Feedback_box/FeedBack_Box/FeedBack_Box.py", line 149, in nextQuestion
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+[2015-07-06 12:44:52 +0000] [2314] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/contrib/fixers.py", line 148, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Feedback_box/FeedBack_Box/FeedBack_Box.py", line 149, in nextQuestion
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+[2015-07-07 10:08:55 +0000] [2140] [INFO] Handling signal: term
+[2015-07-07 10:08:55 +0000] [2313] [INFO] Worker exiting (pid: 2313)
+[2015-07-07 10:08:55 +0000] [2314] [INFO] Worker exiting (pid: 2314)
+[2015-07-07 10:08:55 +0000] [2282] [INFO] Worker exiting (pid: 2282)
+[2015-07-07 10:08:55 +0000] [2140] [INFO] Shutting down: Master
+[2015-07-07 10:09:19 +0000] [2135] [INFO] Starting gunicorn 19.3.0
+[2015-07-07 10:09:19 +0000] [2135] [INFO] Listening at: http://0.0.0.0:8080 (2135)
+[2015-07-07 10:09:19 +0000] [2135] [INFO] Using worker: sync
+[2015-07-07 10:09:19 +0000] [2135] [INFO] Server is ready. Spawning workers
+[2015-07-07 10:09:19 +0000] [2275] [INFO] Booting worker with pid: 2275
+[2015-07-07 10:09:19 +0000] [2275] [INFO] Worker spawned (pid: 2275)
+[2015-07-07 10:09:19 +0000] [2276] [INFO] Booting worker with pid: 2276
+[2015-07-07 10:09:19 +0000] [2276] [INFO] Worker spawned (pid: 2276)
+[2015-07-07 10:09:19 +0000] [2277] [INFO] Booting worker with pid: 2277
+[2015-07-07 10:09:19 +0000] [2277] [INFO] Worker spawned (pid: 2277)
+[2015-07-07 10:09:37 +0000] [2135] [CRITICAL] WORKER TIMEOUT (pid:2275)
+[2015-07-07 10:09:37 +0000] [2135] [CRITICAL] WORKER TIMEOUT (pid:2276)
+[2015-07-07 10:09:37 +0000] [2275] [INFO] worker received SIGABRT signal
+[2015-07-07 10:09:37 +0000] [2135] [CRITICAL] WORKER TIMEOUT (pid:2277)
+[2015-07-07 10:09:37 +0000] [2275] [INFO] Worker exiting (pid: 2275)
+[2015-07-07 10:09:37 +0000] [2277] [INFO] worker received SIGABRT signal
+[2015-07-07 10:09:37 +0000] [2277] [INFO] Worker exiting (pid: 2277)
+[2015-07-07 10:09:37 +0000] [2276] [INFO] worker received SIGABRT signal
+[2015-07-07 10:09:37 +0000] [2276] [INFO] Worker exiting (pid: 2276)
+[2015-07-07 10:09:37 +0000] [2306] [INFO] Booting worker with pid: 2306
+[2015-07-07 10:09:37 +0000] [2306] [INFO] Worker spawned (pid: 2306)
+[2015-07-07 10:09:37 +0000] [2307] [INFO] Booting worker with pid: 2307
+[2015-07-07 10:09:37 +0000] [2307] [INFO] Worker spawned (pid: 2307)
+[2015-07-07 10:09:37 +0000] [2308] [INFO] Booting worker with pid: 2308
+[2015-07-07 10:09:37 +0000] [2308] [INFO] Worker spawned (pid: 2308)
+[2015-07-07 11:08:12 +0000] [2135] [INFO] Handling signal: term
+[2015-07-07 11:08:12 +0000] [2306] [INFO] Worker exiting (pid: 2306)
+[2015-07-07 11:08:12 +0000] [2308] [INFO] Worker exiting (pid: 2308)
+[2015-07-07 11:08:12 +0000] [2307] [INFO] Worker exiting (pid: 2307)
+[2015-07-07 11:08:12 +0000] [2135] [INFO] Shutting down: Master
+[2015-07-07 11:08:35 +0000] [2146] [INFO] Starting gunicorn 19.3.0
+[2015-07-07 11:08:35 +0000] [2146] [INFO] Listening at: http://0.0.0.0:8080 (2146)
+[2015-07-07 11:08:35 +0000] [2146] [INFO] Using worker: sync
+[2015-07-07 11:08:35 +0000] [2146] [INFO] Server is ready. Spawning workers
+[2015-07-07 11:08:35 +0000] [2287] [INFO] Booting worker with pid: 2287
+[2015-07-07 11:08:35 +0000] [2287] [INFO] Worker spawned (pid: 2287)
+[2015-07-07 11:08:35 +0000] [2288] [INFO] Booting worker with pid: 2288
+[2015-07-07 11:08:35 +0000] [2288] [INFO] Worker spawned (pid: 2288)
+[2015-07-07 11:08:35 +0000] [2289] [INFO] Booting worker with pid: 2289
+[2015-07-07 11:08:35 +0000] [2289] [INFO] Worker spawned (pid: 2289)
+[2015-07-07 11:09:02 +0000] [2146] [CRITICAL] WORKER TIMEOUT (pid:2288)
+[2015-07-07 11:09:02 +0000] [2146] [CRITICAL] WORKER TIMEOUT (pid:2289)
+[2015-07-07 11:09:02 +0000] [2288] [INFO] worker received SIGABRT signal
+[2015-07-07 11:09:02 +0000] [2146] [CRITICAL] WORKER TIMEOUT (pid:2287)
+[2015-07-07 11:09:02 +0000] [2289] [INFO] worker received SIGABRT signal
+[2015-07-07 11:09:02 +0000] [2288] [INFO] Worker exiting (pid: 2288)
+[2015-07-07 11:09:02 +0000] [2289] [INFO] Worker exiting (pid: 2289)
+[2015-07-07 11:09:02 +0000] [2287] [INFO] worker received SIGABRT signal
+[2015-07-07 11:09:02 +0000] [2287] [INFO] Worker exiting (pid: 2287)
+[2015-07-07 11:09:02 +0000] [2319] [INFO] Booting worker with pid: 2319
+[2015-07-07 11:09:02 +0000] [2319] [INFO] Worker spawned (pid: 2319)
+[2015-07-07 11:09:02 +0000] [2320] [INFO] Booting worker with pid: 2320
+[2015-07-07 11:09:02 +0000] [2320] [INFO] Worker spawned (pid: 2320)
+[2015-07-07 11:09:03 +0000] [2321] [INFO] Booting worker with pid: 2321
+[2015-07-07 11:09:03 +0000] [2321] [INFO] Worker spawned (pid: 2321)
+[2015-07-07 11:17:19 +0000] [2142] [INFO] Starting gunicorn 19.3.0
+[2015-07-07 11:17:19 +0000] [2142] [INFO] Listening at: http://0.0.0.0:8080 (2142)
+[2015-07-07 11:17:19 +0000] [2142] [INFO] Using worker: sync
+[2015-07-07 11:17:19 +0000] [2142] [INFO] Server is ready. Spawning workers
+[2015-07-07 11:17:19 +0000] [2281] [INFO] Booting worker with pid: 2281
+[2015-07-07 11:17:19 +0000] [2281] [INFO] Worker spawned (pid: 2281)
+[2015-07-07 11:17:19 +0000] [2282] [INFO] Booting worker with pid: 2282
+[2015-07-07 11:17:19 +0000] [2282] [INFO] Worker spawned (pid: 2282)
+[2015-07-07 11:17:20 +0000] [2283] [INFO] Booting worker with pid: 2283
+[2015-07-07 11:17:20 +0000] [2283] [INFO] Worker spawned (pid: 2283)
+[2015-07-07 11:26:25 +0000] [2142] [CRITICAL] WORKER TIMEOUT (pid:2281)
+[2015-07-07 11:26:25 +0000] [2142] [CRITICAL] WORKER TIMEOUT (pid:2282)
+[2015-07-07 11:26:25 +0000] [2281] [INFO] worker received SIGABRT signal
+[2015-07-07 11:26:25 +0000] [2142] [CRITICAL] WORKER TIMEOUT (pid:2283)
+[2015-07-07 11:26:25 +0000] [2281] [INFO] Worker exiting (pid: 2281)
+[2015-07-07 11:26:25 +0000] [2282] [INFO] worker received SIGABRT signal
+[2015-07-07 11:26:25 +0000] [2283] [INFO] worker received SIGABRT signal
+[2015-07-07 11:26:25 +0000] [2282] [INFO] Worker exiting (pid: 2282)
+[2015-07-07 11:26:25 +0000] [2283] [INFO] Worker exiting (pid: 2283)
+[2015-07-07 11:26:25 +0000] [2313] [INFO] Booting worker with pid: 2313
+[2015-07-07 11:26:25 +0000] [2313] [INFO] Worker spawned (pid: 2313)
+[2015-07-07 11:26:25 +0000] [2314] [INFO] Booting worker with pid: 2314
+[2015-07-07 11:26:25 +0000] [2314] [INFO] Worker spawned (pid: 2314)
+[2015-07-07 11:26:25 +0000] [2315] [INFO] Booting worker with pid: 2315
+[2015-07-07 11:26:25 +0000] [2315] [INFO] Worker spawned (pid: 2315)
+[2015-07-07 11:17:19 +0000] [2135] [INFO] Starting gunicorn 19.3.0
+[2015-07-07 11:17:19 +0000] [2135] [INFO] Listening at: http://0.0.0.0:8080 (2135)
+[2015-07-07 11:17:19 +0000] [2135] [INFO] Using worker: sync
+[2015-07-07 11:17:19 +0000] [2135] [INFO] Server is ready. Spawning workers
+[2015-07-07 11:17:19 +0000] [2276] [INFO] Booting worker with pid: 2276
+[2015-07-07 11:17:19 +0000] [2276] [INFO] Worker spawned (pid: 2276)
+[2015-07-07 11:17:19 +0000] [2277] [INFO] Booting worker with pid: 2277
+[2015-07-07 11:17:19 +0000] [2277] [INFO] Worker spawned (pid: 2277)
+[2015-07-07 11:17:19 +0000] [2278] [INFO] Booting worker with pid: 2278
+[2015-07-07 11:17:19 +0000] [2278] [INFO] Worker spawned (pid: 2278)
+[2015-07-07 11:31:58 +0000] [2135] [CRITICAL] WORKER TIMEOUT (pid:2276)
+[2015-07-07 11:31:58 +0000] [2135] [CRITICAL] WORKER TIMEOUT (pid:2277)
+[2015-07-07 11:31:58 +0000] [2276] [INFO] worker received SIGABRT signal
+[2015-07-07 11:31:58 +0000] [2135] [CRITICAL] WORKER TIMEOUT (pid:2278)
+[2015-07-07 11:31:58 +0000] [2276] [INFO] Worker exiting (pid: 2276)
+[2015-07-07 11:31:58 +0000] [2278] [INFO] worker received SIGABRT signal
+[2015-07-07 11:31:58 +0000] [2278] [INFO] Worker exiting (pid: 2278)
+[2015-07-07 11:31:58 +0000] [2277] [INFO] worker received SIGABRT signal
+[2015-07-07 11:31:58 +0000] [2277] [INFO] Worker exiting (pid: 2277)
+[2015-07-07 11:31:58 +0000] [2308] [INFO] Booting worker with pid: 2308
+[2015-07-07 11:31:58 +0000] [2308] [INFO] Worker spawned (pid: 2308)
+[2015-07-07 11:31:58 +0000] [2309] [INFO] Booting worker with pid: 2309
+[2015-07-07 11:31:58 +0000] [2309] [INFO] Worker spawned (pid: 2309)
+[2015-07-07 11:31:58 +0000] [2310] [INFO] Booting worker with pid: 2310
+[2015-07-07 11:31:58 +0000] [2310] [INFO] Worker spawned (pid: 2310)
+[2015-07-07 17:47:35 +0000] [2309] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/contrib/fixers.py", line 148, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Feedback_box/FeedBack_Box/FeedBack_Box.py", line 149, in nextQuestion
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+[2015-07-07 17:47:35 +0000] [2310] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/contrib/fixers.py", line 148, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Feedback_box/FeedBack_Box/FeedBack_Box.py", line 149, in nextQuestion
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+[2015-07-07 17:47:35 +0000] [2308] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/contrib/fixers.py", line 148, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Feedback_box/FeedBack_Box/FeedBack_Box.py", line 149, in nextQuestion
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+[2015-07-07 17:17:23 +0000] [2136] [INFO] Starting gunicorn 19.3.0
+[2015-07-07 17:17:24 +0000] [2136] [INFO] Listening at: http://0.0.0.0:8080 (2136)
+[2015-07-07 17:17:24 +0000] [2136] [INFO] Using worker: sync
+[2015-07-07 17:17:24 +0000] [2136] [INFO] Server is ready. Spawning workers
+[2015-07-07 17:17:24 +0000] [2276] [INFO] Booting worker with pid: 2276
+[2015-07-07 17:17:24 +0000] [2276] [INFO] Worker spawned (pid: 2276)
+[2015-07-07 17:17:24 +0000] [2277] [INFO] Booting worker with pid: 2277
+[2015-07-07 17:17:24 +0000] [2277] [INFO] Worker spawned (pid: 2277)
+[2015-07-07 17:17:24 +0000] [2278] [INFO] Booting worker with pid: 2278
+[2015-07-07 17:17:24 +0000] [2278] [INFO] Worker spawned (pid: 2278)
+[2015-07-07 17:55:13 +0000] [2136] [CRITICAL] WORKER TIMEOUT (pid:2276)
+[2015-07-07 17:55:13 +0000] [2136] [CRITICAL] WORKER TIMEOUT (pid:2277)
+[2015-07-07 17:55:13 +0000] [2276] [INFO] worker received SIGABRT signal
+[2015-07-07 17:55:13 +0000] [2136] [CRITICAL] WORKER TIMEOUT (pid:2278)
+[2015-07-07 17:55:13 +0000] [2277] [INFO] worker received SIGABRT signal
+[2015-07-07 17:55:13 +0000] [2276] [INFO] Worker exiting (pid: 2276)
+[2015-07-07 17:55:13 +0000] [2278] [INFO] worker received SIGABRT signal
+[2015-07-07 17:55:13 +0000] [2277] [INFO] Worker exiting (pid: 2277)
+[2015-07-07 17:55:13 +0000] [2278] [INFO] Worker exiting (pid: 2278)
+[2015-07-07 17:55:14 +0000] [2310] [INFO] Booting worker with pid: 2310
+[2015-07-07 17:55:14 +0000] [2310] [INFO] Worker spawned (pid: 2310)
+[2015-07-07 17:55:14 +0000] [2311] [INFO] Booting worker with pid: 2311
+[2015-07-07 17:55:14 +0000] [2311] [INFO] Worker spawned (pid: 2311)
+[2015-07-07 17:55:14 +0000] [2312] [INFO] Booting worker with pid: 2312
+[2015-07-07 17:55:14 +0000] [2312] [INFO] Worker spawned (pid: 2312)
+[2015-07-08 11:02:09 +0000] [2136] [INFO] Handling signal: term
+[2015-07-08 11:02:09 +0000] [2310] [INFO] Worker exiting (pid: 2310)
+[2015-07-08 11:02:09 +0000] [2312] [INFO] Worker exiting (pid: 2312)
+[2015-07-08 11:02:09 +0000] [2311] [INFO] Worker exiting (pid: 2311)
+[2015-07-08 11:02:09 +0000] [2136] [INFO] Shutting down: Master
+[2015-07-08 11:02:29 +0000] [2137] [INFO] Starting gunicorn 19.3.0
+[2015-07-08 11:02:29 +0000] [2137] [INFO] Listening at: http://0.0.0.0:8080 (2137)
+[2015-07-08 11:02:29 +0000] [2137] [INFO] Using worker: sync
+[2015-07-08 11:02:29 +0000] [2137] [INFO] Server is ready. Spawning workers
+[2015-07-08 11:02:29 +0000] [2277] [INFO] Booting worker with pid: 2277
+[2015-07-08 11:02:29 +0000] [2277] [INFO] Worker spawned (pid: 2277)
+[2015-07-08 11:02:29 +0000] [2278] [INFO] Booting worker with pid: 2278
+[2015-07-08 11:02:29 +0000] [2278] [INFO] Worker spawned (pid: 2278)
+[2015-07-08 11:02:29 +0000] [2279] [INFO] Booting worker with pid: 2279
+[2015-07-08 11:02:29 +0000] [2279] [INFO] Worker spawned (pid: 2279)
+[2015-07-08 11:02:52 +0000] [2137] [CRITICAL] WORKER TIMEOUT (pid:2277)
+[2015-07-08 11:02:52 +0000] [2137] [CRITICAL] WORKER TIMEOUT (pid:2278)
+[2015-07-08 11:02:52 +0000] [2137] [CRITICAL] WORKER TIMEOUT (pid:2279)
+[2015-07-08 11:02:52 +0000] [2278] [INFO] worker received SIGABRT signal
+[2015-07-08 11:02:52 +0000] [2277] [INFO] worker received SIGABRT signal
+[2015-07-08 11:02:52 +0000] [2278] [INFO] Worker exiting (pid: 2278)
+[2015-07-08 11:02:52 +0000] [2277] [INFO] Worker exiting (pid: 2277)
+[2015-07-08 11:02:52 +0000] [2279] [INFO] worker received SIGABRT signal
+[2015-07-08 11:02:52 +0000] [2279] [INFO] Worker exiting (pid: 2279)
+[2015-07-08 11:02:52 +0000] [2310] [INFO] Booting worker with pid: 2310
+[2015-07-08 11:02:52 +0000] [2310] [INFO] Worker spawned (pid: 2310)
+[2015-07-08 11:02:52 +0000] [2312] [INFO] Booting worker with pid: 2312
+[2015-07-08 11:02:52 +0000] [2312] [INFO] Worker spawned (pid: 2312)
+[2015-07-08 11:02:52 +0000] [2313] [INFO] Booting worker with pid: 2313
+[2015-07-08 11:02:52 +0000] [2313] [INFO] Worker spawned (pid: 2313)
+[2015-07-08 11:09:44 +0000] [2313] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/contrib/fixers.py", line 148, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Feedback_box/FeedBack_Box/FeedBack_Box.py", line 149, in nextQuestion
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+[2015-07-08 11:09:44 +0000] [2312] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/contrib/fixers.py", line 148, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Feedback_box/FeedBack_Box/FeedBack_Box.py", line 149, in nextQuestion
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+[2015-07-08 11:09:44 +0000] [2310] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/contrib/fixers.py", line 148, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Feedback_box/FeedBack_Box/FeedBack_Box.py", line 149, in nextQuestion
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+[2015-07-08 11:02:29 +0000] [2140] [INFO] Starting gunicorn 19.3.0
+[2015-07-08 11:02:29 +0000] [2140] [INFO] Listening at: http://0.0.0.0:8080 (2140)
+[2015-07-08 11:02:29 +0000] [2140] [INFO] Using worker: sync
+[2015-07-08 11:02:29 +0000] [2140] [INFO] Server is ready. Spawning workers
+[2015-07-08 11:02:29 +0000] [2278] [INFO] Booting worker with pid: 2278
+[2015-07-08 11:02:29 +0000] [2278] [INFO] Worker spawned (pid: 2278)
+[2015-07-08 11:02:29 +0000] [2279] [INFO] Booting worker with pid: 2279
+[2015-07-08 11:02:29 +0000] [2279] [INFO] Worker spawned (pid: 2279)
+[2015-07-08 11:02:29 +0000] [2280] [INFO] Booting worker with pid: 2280
+[2015-07-08 11:02:29 +0000] [2280] [INFO] Worker spawned (pid: 2280)
+[2015-07-08 11:15:45 +0000] [2140] [CRITICAL] WORKER TIMEOUT (pid:2280)
+[2015-07-08 11:15:45 +0000] [2140] [CRITICAL] WORKER TIMEOUT (pid:2278)
+[2015-07-08 11:15:45 +0000] [2140] [CRITICAL] WORKER TIMEOUT (pid:2279)
+[2015-07-08 11:15:45 +0000] [2278] [INFO] worker received SIGABRT signal
+[2015-07-08 11:15:45 +0000] [2280] [INFO] worker received SIGABRT signal
+[2015-07-08 11:15:45 +0000] [2278] [INFO] Worker exiting (pid: 2278)
+[2015-07-08 11:15:45 +0000] [2280] [INFO] Worker exiting (pid: 2280)
+[2015-07-08 11:15:45 +0000] [2279] [INFO] worker received SIGABRT signal
+[2015-07-08 11:15:45 +0000] [2279] [INFO] Worker exiting (pid: 2279)
+[2015-07-08 11:15:45 +0000] [2312] [INFO] Booting worker with pid: 2312
+[2015-07-08 11:15:45 +0000] [2312] [INFO] Worker spawned (pid: 2312)
+[2015-07-08 11:15:45 +0000] [2313] [INFO] Booting worker with pid: 2313
+[2015-07-08 11:15:45 +0000] [2313] [INFO] Worker spawned (pid: 2313)
+[2015-07-08 11:15:45 +0000] [2314] [INFO] Booting worker with pid: 2314
+[2015-07-08 11:15:45 +0000] [2314] [INFO] Worker spawned (pid: 2314)
