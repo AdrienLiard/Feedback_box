@@ -130,15 +130,12 @@ def index():
 @application.route("/api/nextquestion",methods=['POST'])
 def nextQuestion():
     #get last question
-    question=request.get_json()
-    guid=question["guid"];
-    if(guid==None):
-            guid=str(uuid.uuid4())
-            g.db.execute("insert into interviews (guid) values (?)",[guid])
-            g.db.commit()
-            question["guid"]=guid
+    question=request.get_json()  
     if(question==None):
         question=questionnaire['questions'][0]
+        guid=str(uuid.uuid4())
+        g.db.execute("insert into interviews (guid) values (?)",[guid])
+        g.db.commit()
         question["guid"]=guid
     else:
         print(question["id"])
