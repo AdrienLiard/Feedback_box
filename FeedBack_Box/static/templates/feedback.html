@@ -7,14 +7,14 @@
 <ul class="table-view" ng-if="question.type=='single'">
 	<li class='table-view-cell question' style='padding-left:30px'><i class="fa fa-question-circle"></i> {{question.libelle}}</li>
 	<li class='table-view-cell response' ng-class='question.value[0]==response.value?"selected":""' ng-repeat="response in question.responses" ng-click='changeValue(response.value)'><i class="fa fa-check-circle"></i> <input style='display:none' type='radio' ng-model="question.value[0]" ng-checked="question.value[0]==response.value" name='question' value="{{response.value}}"><span>{{response.lib}}</span></li>
-	<li ng-show='question.value.length>0' class='table-view-cell' style="padding:20px"><button class='btn btn-block'  ng-click='nextQuestion()'>Suivant <i class="fa fa-chevron-right"></i></button></li>
+	<li ng-show='question.value.length>0 | !question.isMandatory' class='table-view-cell' style="padding:20px"><button class='btn btn-block'  ng-click='nextQuestion()'>Suivant <i class="fa fa-chevron-right"></i></button></li>
 </ul>
 
 <ul class="table-view" ng-if="question.type=='multiple'">
 	<li class='table-view-cell question'><i class="fa fa-question-circle"></i> {{question.libelle}}</li>
 	
 	<li class='table-view-cell response' ng-class='question.value.indexOf(response.value)==-1?"":"selected"' ng-repeat="response in question.responses" ng-click='changeValue(response.value)'><i class="fa fa-check-square"></i><input style='display:none' type='checkbox' checklist-model='question.value' name='question' checklist-value="response.value"><span>{{response.lib}}</span></li>
-	<li ng-show='question.value.length>0' class='table-view-cell' style="padding:20px"><button class='btn btn-block'  ng-click='nextQuestion()'>Suivant <i class="fa fa-chevron-right"></i></button></li>
+	<li ng-show='question.value.length>0 | !question.isMandatory' class='table-view-cell' style="padding:20px"><button class='btn btn-block'  ng-click='nextQuestion()'>Suivant <i class="fa fa-chevron-right"></i></button></li>
 	
 </ul>
 
@@ -22,11 +22,13 @@
 	<li class='table-view-cell question'><i class="fa fa-question-circle"></i> {{question.libelle}}</li>
 	
 	<li class="table-view-cell"><textarea name='question' ng-model="question.value[0]" rows="5"></textarea></li>
-	<li  ng-show='question.value[0].length>0' class='table-view-cell' style="padding:20px"><button class='btn btn-block' ng-click='nextQuestion()'>Suivant <i class="fa fa-chevron-right"></i></button></li>	
+	<li  ng-show='question.value[0].length>0 | !question.isMandatory' class='table-view-cell' style="padding:20px"><button class='btn btn-block' ng-click='nextQuestion()'>Suivant <i class="fa fa-chevron-right"></i></button></li>	
 </ul>
 <div class="card" ng-if="question.type=='end'">
 	<p class="control-content active" style="padding:40px">
-		{{question.libelle}}</p>
+		<span style="font-size:18px"><i class="fa fa-thumbs-o-up"></i> Le questionnaire est maintenant terminé.</span>
+                <br><br> Merci d'avoir utilisé la BVA Box. 
+                <br><br>Vous pouvez maintenant vous déconnecter du réseau WIFI ou, dans le cadre de cette démo, <a href="/dashboard" style="font-size:1.3em">consulter les résultats en temps réel</a></p>
 </div>
 
 
