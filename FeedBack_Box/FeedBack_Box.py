@@ -81,7 +81,7 @@ questionnaire={
     {
     'id':7,
     'type':'end',
-    'libelle':u'Laissez-nous votre adresse mail si vous souhaitez recevoir notre newsletter !'
+    'libelle':u'Mathieu is a motherfuckin lucky genius (still a genius) <a href="/dashboard">dash</a>'
     }]
 }
 

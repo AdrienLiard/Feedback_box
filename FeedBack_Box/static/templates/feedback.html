@@ -4,7 +4,6 @@
 .selected>i{color:black;}
 .question>i{color:rgb(230,60,20);}
 </style>
-{{question}}
 <ul class="table-view" ng-if="question.type=='single'">
 	<li class='table-view-cell question' style='padding-left:30px'><i class="fa fa-question-circle"></i> {{question.libelle}}</li>
 	<li class='table-view-cell response' ng-class='question.value[0]==response.value?"selected":""' ng-repeat="response in question.responses" ng-click='changeValue(response.value)'><i class="fa fa-check-circle"></i> <input style='display:none' type='radio' ng-model="question.value[0]" ng-checked="question.value[0]==response.value" name='question' value="{{response.value}}"><span>{{response.lib}}</span></li>
@@ -27,9 +26,7 @@
 </ul>
 <div class="card" ng-if="question.type=='end'">
 	<p class="control-content active" style="padding:40px">
-		<span style="font-size:18px"><i class="fa fa-thumbs-o-up"></i> Le questionnaire est maintenant terminé.</span>
-                <br><br> Merci d'avoir utilisé la BVA Box. 
-                <br><br>Vous pouvez maintenant vous déconnecter du réseau WIFI ou, dans le cadre de cette démo, <a href="./dashboard" style="font-size:1.3em">consulter les résultats en temps réel</a></p>
+		{{question.libelle}}</p>
 </div>
 
 
