@@ -34,35 +34,35 @@ questionnaire={
     'questions':[{
     'id':0,
     'type':'single',
-    'isMandatory':False,
+    'isMandatory':True,
     'libelle':u'Bonjour et bienvenue sur le réseau BVA_CX. Ce réseau vous permet de donner votre avis sur l\'Hôtel The Peninsula en répondant à un court questionnaire anonyme (moins de 2 minutes).',
     'responses':[{'value':1,'lib':u'Je participe'}]
     },
     {
     'id':1,
     'type':'single',
-     'isMandatory':False,
+     'isMandatory':True,
     'libelle':u'Depuis votre arrivée, êtes vous satisfait du Peninsula ?',
     'responses':[{'value':1,'lib':u'Non'},{'value':2,'lib':u'Plutôt'},{'value':3,'lib':u'Tout à fait'},{'value':4,'lib':u'Extrêmement'}]
     },
     {
     'id':2,
     'type':'single',
-     'isMandatory':False,
+     'isMandatory':True,
     'libelle':u'Quel élément vous a le plus satisfait ?',
     'responses':[{'value':1,'lib':u'La facilité d’accès'},{'value':2,'lib':u'Le cadre'},{'value':3,'lib':u'L\'accueil'},{'value':4,'lib':u'Le buffet du petit-déjeuner'}]
     },
     {
     'id':3,
     'type':'single',
-     'isMandatory':False,
+     'isMandatory':True,
     'libelle':u'Quel élément vous a le moins satisfait ?',
     'responses':[{'value':1,'lib':u'La facilité d’accès'},{'value':2,'lib':u'Le cadre'},{'value':3,'lib':u'L\'accueil'},{'value':4,'lib':u'Le buffet du petit-déjeuner'}]
     }, 
     {
     'id':4,
     'type':'single',
-     'isMandatory':False,
+     'isMandatory':True,
     'libelle':u'Quelle conséquence aura cet élément ?',
     'responses':[{'value':1,'lib':u'Je ne reviendrai plus'},{'value':2,'lib':u'Je vais faire une réclamation'},{'value':3,'lib':u'Je '},{'value':4,'lib':u'Aucune'}]
     },
