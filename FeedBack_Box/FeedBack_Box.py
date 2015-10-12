@@ -20,7 +20,7 @@ DEBUG=True
 PORT=8080
 HOST='0.0.0.0'
 SECRET_KEY = 'MySuperSecretKey'
-ROOT_URL="http://bva-cx.fr/"
+ROOT_URL="http://bva-cxzob.fr/"
 #-------------------------------
 
 #-------------------------------
