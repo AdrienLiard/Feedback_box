@@ -109,37 +109,41 @@ def index():
         print(request.headers.get('User-Agent'))
         print(request.url)
         print("**********************************************")
-        if(request.headers.get('User-Agent').startswith('CaptiveNetworkSupport')):
-             return "<HTML><HEAD><TITLE>Success</TITLE></HEAD><BODY>Success</BODY></HTML>"
-        if("google" in request.base_url):
-             return "",204
-        if("android" in request.base_url):
-             return "",204
+        # if(request.headers.get('User-Agent').startswith('CaptiveNetworkSupport')):
+        #      return "<HTML><HEAD><TITLE>Success</TITLE></HEAD><BODY>Success</BODY></HTML>"
+        # if("google" in request.base_url):
+        #      return "",204
+        # if("android" in request.base_url):
+        #      return "",204
         if(request.url_root!=ROOT_URL):
             print(request.url_root)
             return redirect(ROOT_URL)
-        id=request.cookies.get('id')
-        if(id!=None):
-            control=g.db.execute("select count(*) as ct from interviews where guid=?",[id]).fetchone()[0]
-            if(control==0):
-                id=None
+        # id=request.cookies.get('id')
+        # if(id!=None):
+        #     control=g.db.execute("select count(*) as ct from interviews where guid=?",[id]).fetchone()[0]
+        #     if(control==0):
+        #         id=None
         resp=make_response(render_template('questionnaire.html'))
-        if(id==None):
-            guid=str(uuid.uuid4())
-            g.db.execute("insert into interviews (guid) values (?)",[guid])
-            g.db.commit()
+        
             resp.set_cookie("id",guid)
         return resp
 
 @application.route("/api/nextquestion",methods=['POST'])
 def nextQuestion():
-    guid=request.cookies.get('id')
     #get last question
     question=request.get_json()
+    guid=question["guid"];
+    if(guid==None):
+            guid=str(uuid.uuid4())
+            g.db.execute("insert into interviews (guid) values (?)",[guid])
+            g.db.commit()
+            question["guid"]=guid
     if(question==None):
         question=questionnaire['questions'][0]
+        question["guid"]=guid
     else:
         print(question["id"])
+        print(question["guid"])
         if(question["type"]=='open'):
             g.db.execute("insert into interviewsdata (guid,question_id,open_value) values (?,?,?)",[guid,question["id"],question["value"][0]])
             g.db.commit()
@@ -158,7 +162,7 @@ def nextQuestion():
         print(len(questionnaire['questions']))
         g.db.execute("update interviews set completed=1 where guid=?",[guid])
         g.db.commit()
-        return jsonify({"id":-1})
+        return jsonify({"guid":guid,id":-1})
     question=questionnaire['questions'][maxQuestionAnswered+1]
     question["value"]=[]
     return jsonify(question)
