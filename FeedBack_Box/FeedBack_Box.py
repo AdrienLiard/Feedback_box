@@ -138,6 +138,8 @@ def nextQuestion():
         g.db.execute("insert into interviews (guid) values (?)",[guid])
         g.db.commit()
         question["guid"]=guid
+        question["value"]=[]
+        return jsonify(question)
     else:
         print(question["id"])
         print(question["guid"])
