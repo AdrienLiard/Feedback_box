@@ -150,8 +150,6 @@ def nextQuestion():
         print(question["guid"])
         guid=question["guid"]
         if(question["type"]=='open'):
-            if(len(question["value"])==0):
-                question["value"][0]=""
             g.db.execute("insert into interviewsdata (guid,question_id,open_value) values (?,?,?)",[guid,question["id"],question["value"][0]])
             g.db.commit()
         elif(question["type"]=='single'):
