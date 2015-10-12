@@ -2,18 +2,18 @@ var app=angular.module('feedback',['ngRoute','checklist-model'])
 	.controller("questionnaire",["$scope","$http","$location","questionService",function($scope,$http,$location,questionService){
 		$scope.question=questionService.getNextQuestion().then(function(question){
 			$scope.question=question;
-			if(question.id==-1){
-				$location.path("/end");
-			}
+			// if(question.id==-1){
+			// 	$location.path("/end");
+			// }
 		});
 		$scope.nextQuestion=function(){
 			
 			$scope.question=questionService.getNextQuestion($scope.question).then(function(question){
 			$scope.question=question;
 			console.log(question);
-			if(question.id==-1){
-				$location.path("/end");
-			}
+			// if(question.id==-1){
+			// 	$location.path("/end");
+			// }
 		});
 		};
 		$scope.changeValue=function(val){
