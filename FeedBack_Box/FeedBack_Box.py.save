@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+Bonjour et bienvenu sur le réseau BVA_CX. #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #-------------------------------
 #Imports
@@ -35,48 +35,42 @@ questionnaire={
     'id':0,
     'type':'single',
     'isMandatory':False,
-    'libelle':u'Bonjour et bienvenue sur le réseau BVA_CX. Ce réseau vous permet de donner votre avis sur l\'Hôtel The Peninsula en répondant à un court questionnaire anonyme (moins de 2 minutes).',
-    'responses':[{'value':1,'lib':u'Je participe'}]
+    'libelle':u'Si on faisait un thème pour la soirée 2016... Lequel vous brancherait le plus ?',
+    'responses':[{'value':1,'lib':u'Thème coloriel'},{'value':2,'lib':u'Thème d\'époque'},{'value':3,'lib':u'Thème musical'},{'value':4,'lib':u'Thème voyage'}]
     },
     {
     'id':1,
-    'type':'single',
+    'type':'open',
      'isMandatory':False,
-    'libelle':u'Depuis votre arrivée, êtes vous satisfait du Peninsula ?',
-    'responses':[{'value':1,'lib':u'Non'},{'value':2,'lib':u'Plutôt'},{'value':3,'lib':u'Tout à fait'},{'value':4,'lib':u'Extrêmement'}]
+    'libelle':u'Et si vous deviez proposer un thème fou, quel serait-il ? Surprenez-nous !',
+    'responses':[{'value':1,'lib':u'Tout à fait'},{'value':2,'lib':u'Plutôt'},{'value':3,'lib':u'Plutôt pas'},{'value':4,'lib':u'Pas du tout'}]
     },
     {
     'id':2,
     'type':'single',
      'isMandatory':False,
-    'libelle':u'Quel élément vous a le plus satisfait ?',
-    'responses':[{'value':1,'lib':u'La facilité d’accès'},{'value':2,'lib':u'Le cadre'},{'value':3,'lib':u'L\'accueil'},{'value':4,'lib':u'Le buffet du petit-déjeuner'}]
+    'libelle':u'Souhaiteriez-vous participer à un challenge déguisement ?',
+    'responses':[{'value':1,'lib':u'Oh oui ! '},{'value':2,'lib':u'Non merci'}]
     },
     {
     'id':3,
-    'type':'single',
+    'type':'multiple',
      'isMandatory':False,
-    'libelle':u'Quel élément vous a le moins satisfait ?',
-    'responses':[{'value':1,'lib':u'La facilité d’accès'},{'value':2,'lib':u'Le cadre'},{'value':3,'lib':u'L\'accueil'},{'value':4,'lib':u'Le buffet du petit-déjeuner'}]
-    }, 
+    'libelle':u'Quelle boisson aimeriez-vous retrouver ? (avec modération!)',
+    'responses':[{'value':1,'lib':u'Bière'},{'value':2,'lib':u'Cocktails'},{'value':3,'lib':u'Alcool fort'},{'value':4,'lib':u'Vin'},{'value':5,'lib':u'Champagne'},{'value':6,'lib':u'Soft'}]
+    },
     {
     'id':4,
     'type':'single',
      'isMandatory':False,
-    'libelle':u'Quelle conséquence aura cet élément ?',
-    'responses':[{'value':1,'lib':u'Je ne reviendrai plus'},{'value':2,'lib':u'Je vais faire une réclamation'},{'value':3,'lib':u'Je '},{'value':4,'lib':u'Aucune'}]
+    'libelle':u'Quelle ambiance musicale souhaiteriez-vous ?',
+    'responses':[{'value':1,'lib':u'Rock'},{'value':2,'lib':u'Pop'},{'value':3,'lib':u'Electro'},{'value':4,'lib':u'Musique du monde'},{'value':5,'lib':u'Variété'},{'value':6,'lib':u'Un mélange'}]
     },
-    {
+     {
     'id':5,
     'type':'open',
      'isMandatory':False,
-    'libelle':u'Avez-vous des suggestions à nous faire ?'
-    },
-    {
-    'id':6,
-    'type':'open',
-     'isMandatory':False,
-    'libelle':u'Laissez-nous votre adresse mail si vous souhaitez recevoir notre newsletter !'
+    'libelle':u'Avez-vous des suggestions d\'animations (photo, nourriture, boisson, etc)?'
     }]
 }
 
@@ -109,12 +103,12 @@ def index():
         print(request.headers.get('User-Agent'))
         print(request.url)
         print("**********************************************")
-        if(request.headers.get('User-Agent').startswith('CaptiveNetworkSupport')):
-             return "<HTML><HEAD><TITLE>Success</TITLE></HEAD><BODY>Success</BODY></HTML>"
-        if("google" in request.base_url):
-             return "",204
-        if("android" in request.base_url):
-             return "",204
+        # if(request.headers.get('User-Agent').startswith('CaptiveNetworkSupport')):
+        #     return "<HTML><HEAD><TITLE>Success</TITLE></HEAD><BODY>Success</BODY></HTML>"
+        # if("google" in request.base_url):
+        #     return "",204
+        # if("android" in request.base_url):
+        #     return "",204
         if(request.url_root!=ROOT_URL):
             print(request.url_root)
             return redirect(ROOT_URL)
@@ -196,11 +190,11 @@ def page_not_found(e):
     #print(request.url)
     #print("**********************************************")
     #if("google" in request.base_url):
-     #       print("returning 204")
-      #      return "",204
+            #print("returning 204")
+            #return "",204
     #if("android" in request.base_url):
-     #       print("returning 204")
-      #      return "",204
+            #print("returning 204")
+            #return "",204
     return redirect(ROOT_URL)
 
 #   App

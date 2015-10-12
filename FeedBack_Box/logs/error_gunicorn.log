@@ -47218,3 +47218,316 @@ TypeError: 'NoneType' object has no attribute '__getitem__'
 [2015-07-08 11:15:45 +0000] [2313] [INFO] Worker spawned (pid: 2313)
 [2015-07-08 11:15:45 +0000] [2314] [INFO] Booting worker with pid: 2314
 [2015-07-08 11:15:45 +0000] [2314] [INFO] Worker spawned (pid: 2314)
+[2015-07-07 19:24:04 +0000] [2595] [INFO] Starting gunicorn 19.3.0
+[2015-07-07 19:24:04 +0000] [2595] [INFO] Listening at: http://0.0.0.0:8080 (2595)
+[2015-07-07 19:24:04 +0000] [2595] [INFO] Using worker: sync
+[2015-07-07 19:24:04 +0000] [2595] [INFO] Server is ready. Spawning workers
+[2015-07-07 19:24:04 +0000] [2822] [INFO] Booting worker with pid: 2822
+[2015-07-07 19:24:04 +0000] [2822] [INFO] Worker spawned (pid: 2822)
+[2015-07-07 19:24:04 +0000] [2823] [INFO] Booting worker with pid: 2823
+[2015-07-07 19:24:04 +0000] [2823] [INFO] Worker spawned (pid: 2823)
+[2015-07-07 19:24:04 +0000] [2824] [INFO] Booting worker with pid: 2824
+[2015-07-07 19:24:04 +0000] [2824] [INFO] Worker spawned (pid: 2824)
+[2015-07-07 19:27:47 +0000] [2595] [CRITICAL] WORKER TIMEOUT (pid:2824)
+[2015-07-07 19:27:47 +0000] [2824] [INFO] worker received SIGABRT signal
+[2015-07-07 19:27:47 +0000] [2824] [INFO] Worker exiting (pid: 2824)
+[2015-07-07 19:27:47 +0000] [3394] [INFO] Booting worker with pid: 3394
+[2015-07-07 19:27:47 +0000] [3394] [INFO] Worker spawned (pid: 3394)
+[2015-07-07 20:25:18 +0000] [2595] [CRITICAL] WORKER TIMEOUT (pid:2822)
+[2015-07-07 20:25:18 +0000] [2822] [INFO] worker received SIGABRT signal
+[2015-07-07 20:25:18 +0000] [2822] [INFO] Worker exiting (pid: 2822)
+[2015-07-07 20:25:19 +0000] [4593] [INFO] Booting worker with pid: 4593
+[2015-07-07 20:25:19 +0000] [4593] [INFO] Worker spawned (pid: 4593)
+[2015-07-07 20:18:36 +0000] [2749] [INFO] Starting gunicorn 19.3.0
+[2015-07-07 20:18:36 +0000] [2749] [INFO] Listening at: http://0.0.0.0:8080 (2749)
+[2015-07-07 20:18:36 +0000] [2749] [INFO] Using worker: sync
+[2015-07-07 20:18:36 +0000] [2749] [INFO] Server is ready. Spawning workers
+[2015-07-07 20:18:36 +0000] [2854] [INFO] Booting worker with pid: 2854
+[2015-07-07 20:18:36 +0000] [2854] [INFO] Worker spawned (pid: 2854)
+[2015-07-07 20:18:36 +0000] [2855] [INFO] Booting worker with pid: 2855
+[2015-07-07 20:18:36 +0000] [2855] [INFO] Worker spawned (pid: 2855)
+[2015-07-07 20:18:36 +0000] [2856] [INFO] Booting worker with pid: 2856
+[2015-07-07 20:18:36 +0000] [2856] [INFO] Worker spawned (pid: 2856)
+[2015-07-29 18:18:16 +0000] [2741] [INFO] Starting gunicorn 19.3.0
+[2015-07-29 18:18:16 +0000] [2741] [INFO] Listening at: http://0.0.0.0:8080 (2741)
+[2015-07-29 18:18:16 +0000] [2741] [INFO] Using worker: sync
+[2015-07-29 18:18:16 +0000] [2741] [INFO] Server is ready. Spawning workers
+[2015-07-29 18:18:16 +0000] [2842] [INFO] Booting worker with pid: 2842
+[2015-07-29 18:18:17 +0000] [2842] [INFO] Worker spawned (pid: 2842)
+[2015-07-29 18:18:17 +0000] [2845] [INFO] Booting worker with pid: 2845
+[2015-07-29 18:18:17 +0000] [2845] [INFO] Worker spawned (pid: 2845)
+[2015-07-29 18:18:17 +0000] [2846] [INFO] Booting worker with pid: 2846
+[2015-07-29 18:18:17 +0000] [2846] [INFO] Worker spawned (pid: 2846)
+[2015-07-30 02:18:18 +0000] [2563] [INFO] Starting gunicorn 19.3.0
+[2015-07-30 02:18:18 +0000] [2563] [INFO] Listening at: http://0.0.0.0:8080 (2563)
+[2015-07-30 02:18:18 +0000] [2563] [INFO] Using worker: sync
+[2015-07-30 02:18:18 +0000] [2563] [INFO] Server is ready. Spawning workers
+[2015-07-30 02:18:18 +0000] [2774] [INFO] Booting worker with pid: 2774
+[2015-07-30 02:18:18 +0000] [2774] [INFO] Worker spawned (pid: 2774)
+[2015-07-30 02:18:18 +0000] [2775] [INFO] Booting worker with pid: 2775
+[2015-07-30 02:18:18 +0000] [2775] [INFO] Worker spawned (pid: 2775)
+[2015-07-30 02:18:18 +0000] [2776] [INFO] Booting worker with pid: 2776
+[2015-07-30 02:18:18 +0000] [2776] [INFO] Worker spawned (pid: 2776)
+[2015-07-31 07:18:19 +0000] [2569] [INFO] Starting gunicorn 19.3.0
+[2015-07-31 07:18:19 +0000] [2569] [INFO] Listening at: http://0.0.0.0:8080 (2569)
+[2015-07-31 07:18:19 +0000] [2569] [INFO] Using worker: sync
+[2015-07-31 07:18:19 +0000] [2569] [INFO] Server is ready. Spawning workers
+[2015-07-31 07:18:19 +0000] [2783] [INFO] Booting worker with pid: 2783
+[2015-07-31 07:18:19 +0000] [2783] [INFO] Worker spawned (pid: 2783)
+[2015-07-31 07:18:19 +0000] [2784] [INFO] Booting worker with pid: 2784
+[2015-07-31 07:18:19 +0000] [2784] [INFO] Worker spawned (pid: 2784)
+[2015-07-31 07:18:19 +0000] [2785] [INFO] Booting worker with pid: 2785
+[2015-07-31 07:18:19 +0000] [2785] [INFO] Worker spawned (pid: 2785)
+[2015-08-01 07:18:17 +0000] [2625] [INFO] Starting gunicorn 19.3.0
+[2015-08-01 07:18:17 +0000] [2625] [INFO] Listening at: http://0.0.0.0:8080 (2625)
+[2015-08-01 07:18:17 +0000] [2625] [INFO] Using worker: sync
+[2015-08-01 07:18:17 +0000] [2625] [INFO] Server is ready. Spawning workers
+[2015-08-01 07:18:17 +0000] [2772] [INFO] Booting worker with pid: 2772
+[2015-08-01 07:18:17 +0000] [2772] [INFO] Worker spawned (pid: 2772)
+[2015-08-01 07:18:17 +0000] [2773] [INFO] Booting worker with pid: 2773
+[2015-08-01 07:18:17 +0000] [2773] [INFO] Worker spawned (pid: 2773)
+[2015-08-01 07:18:17 +0000] [2774] [INFO] Booting worker with pid: 2774
+[2015-08-01 07:18:18 +0000] [2774] [INFO] Worker spawned (pid: 2774)
+[2015-08-01 20:18:19 +0000] [2556] [INFO] Starting gunicorn 19.3.0
+[2015-08-01 20:18:19 +0000] [2556] [INFO] Listening at: http://0.0.0.0:8080 (2556)
+[2015-08-01 20:18:19 +0000] [2556] [INFO] Using worker: sync
+[2015-08-01 20:18:19 +0000] [2556] [INFO] Server is ready. Spawning workers
+[2015-08-01 20:18:19 +0000] [2774] [INFO] Booting worker with pid: 2774
+[2015-08-01 20:18:19 +0000] [2774] [INFO] Worker spawned (pid: 2774)
+[2015-08-01 20:18:19 +0000] [2775] [INFO] Booting worker with pid: 2775
+[2015-08-01 20:18:19 +0000] [2775] [INFO] Worker spawned (pid: 2775)
+[2015-08-01 20:18:19 +0000] [2776] [INFO] Booting worker with pid: 2776
+[2015-08-01 20:18:19 +0000] [2776] [INFO] Worker spawned (pid: 2776)
+[2015-08-27 02:18:16 +0000] [2559] [INFO] Starting gunicorn 19.3.0
+[2015-08-27 02:18:16 +0000] [2559] [INFO] Listening at: http://0.0.0.0:8080 (2559)
+[2015-08-27 02:18:16 +0000] [2559] [INFO] Using worker: sync
+[2015-08-27 02:18:16 +0000] [2559] [INFO] Server is ready. Spawning workers
+[2015-08-27 02:18:16 +0000] [2775] [INFO] Booting worker with pid: 2775
+[2015-08-27 02:18:16 +0000] [2775] [INFO] Worker spawned (pid: 2775)
+[2015-08-27 02:18:16 +0000] [2776] [INFO] Booting worker with pid: 2776
+[2015-08-27 02:18:16 +0000] [2776] [INFO] Worker spawned (pid: 2776)
+[2015-08-27 02:18:16 +0000] [2777] [INFO] Booting worker with pid: 2777
+[2015-08-27 02:18:16 +0000] [2777] [INFO] Worker spawned (pid: 2777)
+[2015-09-03 22:18:19 +0000] [2737] [INFO] Starting gunicorn 19.3.0
+[2015-09-03 22:18:19 +0000] [2737] [INFO] Listening at: http://0.0.0.0:8080 (2737)
+[2015-09-03 22:18:19 +0000] [2737] [INFO] Using worker: sync
+[2015-09-03 22:18:19 +0000] [2737] [INFO] Server is ready. Spawning workers
+[2015-09-03 22:18:19 +0000] [2830] [INFO] Booting worker with pid: 2830
+[2015-09-03 22:18:19 +0000] [2830] [INFO] Worker spawned (pid: 2830)
+[2015-09-03 22:18:19 +0000] [2831] [INFO] Booting worker with pid: 2831
+[2015-09-03 22:18:19 +0000] [2831] [INFO] Worker spawned (pid: 2831)
+[2015-09-03 22:18:19 +0000] [2833] [INFO] Booting worker with pid: 2833
+[2015-09-03 22:18:19 +0000] [2833] [INFO] Worker spawned (pid: 2833)
+[2015-09-06 13:38:51 +0000] [2737] [CRITICAL] WORKER TIMEOUT (pid:2831)
+[2015-09-06 13:38:51 +0000] [2831] [INFO] worker received SIGABRT signal
+[2015-09-06 13:38:51 +0000] [2831] [INFO] Worker exiting (pid: 2831)
+[2015-09-06 13:38:51 +0000] [27449] [INFO] Booting worker with pid: 27449
+[2015-09-06 13:38:51 +0000] [27449] [INFO] Worker spawned (pid: 27449)
+[2015-09-24 23:18:20 +0000] [2550] [INFO] Starting gunicorn 19.3.0
+[2015-09-24 23:18:20 +0000] [2550] [INFO] Listening at: http://0.0.0.0:8080 (2550)
+[2015-09-24 23:18:20 +0000] [2550] [INFO] Using worker: sync
+[2015-09-24 23:18:20 +0000] [2550] [INFO] Server is ready. Spawning workers
+[2015-09-24 23:18:20 +0000] [2749] [INFO] Booting worker with pid: 2749
+[2015-09-24 23:18:20 +0000] [2749] [INFO] Worker spawned (pid: 2749)
+[2015-09-24 23:18:20 +0000] [2756] [INFO] Booting worker with pid: 2756
+[2015-09-24 23:18:20 +0000] [2756] [INFO] Worker spawned (pid: 2756)
+[2015-09-24 23:18:20 +0000] [2760] [INFO] Booting worker with pid: 2760
+[2015-09-24 23:18:20 +0000] [2760] [INFO] Worker spawned (pid: 2760)
+[2015-09-29 21:17:26 +0000] [2575] [INFO] Starting gunicorn 19.3.0
+[2015-09-29 21:17:26 +0000] [2575] [INFO] Listening at: http://0.0.0.0:8080 (2575)
+[2015-09-29 21:17:26 +0000] [2575] [INFO] Using worker: sync
+[2015-09-29 21:17:26 +0000] [2575] [INFO] Server is ready. Spawning workers
+[2015-09-29 21:17:26 +0000] [2692] [INFO] Booting worker with pid: 2692
+[2015-09-29 21:17:26 +0000] [2692] [INFO] Worker spawned (pid: 2692)
+[2015-09-29 21:17:27 +0000] [2693] [INFO] Booting worker with pid: 2693
+[2015-09-29 21:17:27 +0000] [2693] [INFO] Worker spawned (pid: 2693)
+[2015-09-29 21:17:27 +0000] [2694] [INFO] Booting worker with pid: 2694
+[2015-09-29 21:17:27 +0000] [2694] [INFO] Worker spawned (pid: 2694)
+[2015-10-12 10:45:45 +0000] [2575] [CRITICAL] WORKER TIMEOUT (pid:2692)
+[2015-10-12 10:45:45 +0000] [2575] [CRITICAL] WORKER TIMEOUT (pid:2693)
+[2015-10-12 10:45:45 +0000] [2692] [INFO] worker received SIGABRT signal
+[2015-10-12 10:45:45 +0000] [2575] [CRITICAL] WORKER TIMEOUT (pid:2694)
+[2015-10-12 10:45:45 +0000] [2692] [INFO] Worker exiting (pid: 2692)
+[2015-10-12 10:45:45 +0000] [2694] [INFO] worker received SIGABRT signal
+[2015-10-12 10:45:45 +0000] [2694] [INFO] Worker exiting (pid: 2694)
+[2015-10-12 10:45:45 +0000] [2693] [INFO] worker received SIGABRT signal
+[2015-10-12 10:45:45 +0000] [2693] [INFO] Worker exiting (pid: 2693)
+[2015-10-12 10:45:45 +0000] [2695] [INFO] Booting worker with pid: 2695
+[2015-10-12 10:45:45 +0000] [2695] [INFO] Worker spawned (pid: 2695)
+[2015-10-12 10:45:45 +0000] [2696] [INFO] Booting worker with pid: 2696
+[2015-10-12 10:45:45 +0000] [2696] [INFO] Worker spawned (pid: 2696)
+[2015-10-12 10:45:45 +0000] [2697] [INFO] Booting worker with pid: 2697
+[2015-10-12 10:45:45 +0000] [2697] [INFO] Worker spawned (pid: 2697)
+[2015-10-12 11:14:14 +0000] [2575] [INFO] Handling signal: term
+[2015-10-12 11:14:14 +0000] [2695] [INFO] Worker exiting (pid: 2695)
+[2015-10-12 11:14:14 +0000] [2697] [INFO] Worker exiting (pid: 2697)
+[2015-10-12 11:14:14 +0000] [2696] [INFO] Worker exiting (pid: 2696)
+[2015-10-12 11:14:14 +0000] [2575] [INFO] Shutting down: Master
+[2015-10-12 11:14:41 +0000] [2601] [INFO] Starting gunicorn 19.3.0
+[2015-10-12 11:14:41 +0000] [2601] [INFO] Listening at: http://0.0.0.0:8080 (2601)
+[2015-10-12 11:14:41 +0000] [2601] [INFO] Using worker: sync
+[2015-10-12 11:14:41 +0000] [2601] [INFO] Server is ready. Spawning workers
+[2015-10-12 11:14:41 +0000] [2817] [INFO] Booting worker with pid: 2817
+[2015-10-12 11:14:41 +0000] [2817] [INFO] Worker spawned (pid: 2817)
+[2015-10-12 11:14:41 +0000] [2818] [INFO] Booting worker with pid: 2818
+[2015-10-12 11:14:41 +0000] [2818] [INFO] Worker spawned (pid: 2818)
+[2015-10-12 11:14:41 +0000] [2819] [INFO] Booting worker with pid: 2819
+[2015-10-12 11:14:41 +0000] [2819] [INFO] Worker spawned (pid: 2819)
+[2015-10-12 11:14:57 +0000] [2601] [CRITICAL] WORKER TIMEOUT (pid:2817)
+[2015-10-12 11:14:57 +0000] [2817] [INFO] worker received SIGABRT signal
+[2015-10-12 11:14:57 +0000] [2817] [INFO] Worker exiting (pid: 2817)
+[2015-10-12 11:14:57 +0000] [2601] [CRITICAL] WORKER TIMEOUT (pid:2818)
+[2015-10-12 11:14:57 +0000] [2818] [INFO] worker received SIGABRT signal
+[2015-10-12 11:14:57 +0000] [2818] [INFO] Worker exiting (pid: 2818)
+[2015-10-12 11:14:57 +0000] [2601] [CRITICAL] WORKER TIMEOUT (pid:2819)
+[2015-10-12 11:14:57 +0000] [2819] [INFO] worker received SIGABRT signal
+[2015-10-12 11:14:57 +0000] [2819] [INFO] Worker exiting (pid: 2819)
+[2015-10-12 11:14:57 +0000] [2898] [INFO] Booting worker with pid: 2898
+[2015-10-12 11:14:57 +0000] [2898] [INFO] Worker spawned (pid: 2898)
+[2015-10-12 11:14:57 +0000] [2899] [INFO] Booting worker with pid: 2899
+[2015-10-12 11:14:57 +0000] [2899] [INFO] Worker spawned (pid: 2899)
+[2015-10-12 11:14:57 +0000] [2900] [INFO] Booting worker with pid: 2900
+[2015-10-12 11:14:57 +0000] [2900] [INFO] Worker spawned (pid: 2900)
+[2015-10-12 13:42:26 +0000] [2601] [INFO] Handling signal: term
+[2015-10-12 13:42:26 +0000] [2900] [INFO] Worker exiting (pid: 2900)
+[2015-10-12 13:42:26 +0000] [2899] [INFO] Worker exiting (pid: 2899)
+[2015-10-12 13:42:26 +0000] [2898] [INFO] Worker exiting (pid: 2898)
+[2015-10-12 13:42:26 +0000] [2601] [INFO] Shutting down: Master
+[2015-10-12 13:42:47 +0000] [2585] [INFO] Starting gunicorn 19.3.0
+[2015-10-12 13:42:47 +0000] [2585] [INFO] Listening at: http://0.0.0.0:8080 (2585)
+[2015-10-12 13:42:47 +0000] [2585] [INFO] Using worker: sync
+[2015-10-12 13:42:47 +0000] [2585] [INFO] Server is ready. Spawning workers
+[2015-10-12 13:42:47 +0000] [2804] [INFO] Booting worker with pid: 2804
+[2015-10-12 13:42:47 +0000] [2804] [INFO] Worker spawned (pid: 2804)
+[2015-10-12 13:42:47 +0000] [2805] [INFO] Booting worker with pid: 2805
+[2015-10-12 13:42:47 +0000] [2805] [INFO] Worker spawned (pid: 2805)
+[2015-10-12 13:42:47 +0000] [2806] [INFO] Booting worker with pid: 2806
+[2015-10-12 13:42:47 +0000] [2806] [INFO] Worker spawned (pid: 2806)
+[2015-10-12 13:51:39 +0000] [2806] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/contrib/fixers.py", line 148, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Feedback_box/FeedBack_Box/FeedBack_Box.py", line 148, in nextQuestion
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+[2015-10-12 13:51:39 +0000] [2805] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/contrib/fixers.py", line 148, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Feedback_box/FeedBack_Box/FeedBack_Box.py", line 148, in nextQuestion
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+[2015-10-12 13:51:39 +0000] [2804] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/contrib/fixers.py", line 148, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Feedback_box/FeedBack_Box/FeedBack_Box.py", line 148, in nextQuestion
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+[2015-10-12 13:56:30 +0000] [2805] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/contrib/fixers.py", line 148, in __call__
+    return self.app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/Feedback_box/FeedBack_Box/FeedBack_Box.py", line 148, in nextQuestion
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+[2015-10-12 15:12:58 +0000] [2585] [INFO] Handling signal: term
+[2015-10-12 15:12:58 +0000] [2805] [INFO] Worker exiting (pid: 2805)
+[2015-10-12 15:12:58 +0000] [2804] [INFO] Worker exiting (pid: 2804)
+[2015-10-12 15:12:58 +0000] [2806] [INFO] Worker exiting (pid: 2806)
+[2015-10-12 15:12:58 +0000] [2585] [INFO] Shutting down: Master
+[2015-10-12 15:13:55 +0000] [2590] [INFO] Starting gunicorn 19.3.0
+[2015-10-12 15:13:55 +0000] [2590] [INFO] Listening at: http://0.0.0.0:8080 (2590)
+[2015-10-12 15:13:55 +0000] [2590] [INFO] Using worker: sync
+[2015-10-12 15:13:55 +0000] [2590] [INFO] Server is ready. Spawning workers
+[2015-10-12 15:13:55 +0000] [2805] [INFO] Booting worker with pid: 2805
+[2015-10-12 15:13:55 +0000] [2805] [INFO] Worker spawned (pid: 2805)
+[2015-10-12 15:13:55 +0000] [2806] [INFO] Booting worker with pid: 2806
+[2015-10-12 15:13:55 +0000] [2806] [INFO] Worker spawned (pid: 2806)
+[2015-10-12 15:13:55 +0000] [2807] [INFO] Booting worker with pid: 2807
+[2015-10-12 15:13:55 +0000] [2807] [INFO] Worker spawned (pid: 2807)
+[2015-10-12 15:17:23 +0000] [2590] [INFO] Handling signal: term
+[2015-10-12 15:17:23 +0000] [2806] [INFO] Worker exiting (pid: 2806)
+[2015-10-12 15:17:23 +0000] [2807] [INFO] Worker exiting (pid: 2807)
+[2015-10-12 15:17:23 +0000] [2805] [INFO] Worker exiting (pid: 2805)
+[2015-10-12 15:17:23 +0000] [2590] [INFO] Shutting down: Master

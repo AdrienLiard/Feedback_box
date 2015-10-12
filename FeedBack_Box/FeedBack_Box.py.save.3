@@ -109,12 +109,12 @@ def index():
         print(request.headers.get('User-Agent'))
         print(request.url)
         print("**********************************************")
-        if(request.headers.get('User-Agent').startswith('CaptiveNetworkSupport')):
-             return "<HTML><HEAD><TITLE>Success</TITLE></HEAD><BODY>Success</BODY></HTML>"
-        if("google" in request.base_url):
-             return "",204
-        if("android" in request.base_url):
-             return "",204
+        # if(request.headers.get('User-Agent').startswith('CaptiveNetworkSupport')):
+        #     return "<HTML><HEAD><TITLE>Success</TITLE></HEAD><BODY>Success</BODY></HTML>"
+        # if("google" in request.base_url):
+        #     return "",204
+        # if("android" in request.base_url):
+        #     return "",204
         if(request.url_root!=ROOT_URL):
             print(request.url_root)
             return redirect(ROOT_URL)
@@ -196,11 +196,11 @@ def page_not_found(e):
     #print(request.url)
     #print("**********************************************")
     #if("google" in request.base_url):
-     #       print("returning 204")
-      #      return "",204
+            #print("returning 204")
+            #return "",204
     #if("android" in request.base_url):
-     #       print("returning 204")
-      #      return "",204
+            #print("returning 204")
+            #return "",204
     return redirect(ROOT_URL)
 
 #   App
@@ -209,6 +209,6 @@ def page_not_found(e):
 application.wsgi_app = ProxyFix(application.wsgi_app)
 if __name__=='__main__':
     #application.run(host='0.0.0.0')
-    #application.run(host=application.config["HOST"])
+    application.run(host=application.config["HOST"])
     application.run(host=application.config["HOST"],port=application.config["PORT"])
 #-------------------------------
