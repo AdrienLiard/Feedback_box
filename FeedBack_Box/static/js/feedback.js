@@ -39,10 +39,6 @@ var app=angular.module('feedback',['ngRoute','checklist-model'])
 			.when("/about",{
 				templateUrl:'../static/templates/about.html'
 			})
-                        .when("/dashboard",{
-                                templateUrl:'../static/templates/dashboard.html'
-                        })
-
 			.otherwise({redirectTo:'/'});
 			
 	}])	

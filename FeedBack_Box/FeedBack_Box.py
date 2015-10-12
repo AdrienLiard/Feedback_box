@@ -190,17 +190,17 @@ def results():
     result={"data":[]}
     for question in questionnaire["questions"]:
         cursor=g.db.cursor()
-        temp={'id':question['id'],'libelle':question["libelle"],'type':question["type"],'show':False,'data':[]}
-        if question["type"]=="open":
-            print("open")
-            for response in cursor.execute("select open_value from interviewsdata where question_id=?",[question["id"]]).fetchall():
-                temp["data"].append({'value':response[0]})             
-        else:
-            if question["type"]!="end":
+        if question["type"]!="end":
+            temp={'id':question['id'],'libelle':question["libelle"],'type':question["type"],'show':False,'data':[]}
+            if question["type"]=="open":
+                print("open")
+                for response in cursor.execute("select open_value from interviewsdata where question_id=?",[question["id"]]).fetchall():
+                    temp["data"].append({'value':response[0]})             
+            else:
                 for response in question['responses']:
                     val=cursor.execute("select count(*) as ct from interviewsdata where question_id=? and closed_value=?",[question["id"],response['value']]).fetchone()[0]
                     temp["data"].append({'label':response['lib'],'code':response['value'],'value':val})
-        result["data"].append(temp)
+            result["data"].append(temp)
     return jsonify(result)
 
 @application.route("/api/questionnaire")
