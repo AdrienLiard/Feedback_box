@@ -77,6 +77,11 @@ questionnaire={
     'type':'open',
      'isMandatory':False,
     'libelle':u'Laissez-nous votre adresse mail si vous souhaitez recevoir notre newsletter !'
+    },
+    {
+    'id':7,
+    'type':'end',
+    'libelle':u'Laissez-nous votre adresse mail si vous souhaitez recevoir notre newsletter !'
     }]
 }
 
