@@ -124,8 +124,7 @@ def index():
         #     if(control==0):
         #         id=None
         resp=make_response(render_template('questionnaire.html'))
-        
-            resp.set_cookie("id",guid)
+        #resp.set_cookie("id",guid)
         return resp
 
 @application.route("/api/nextquestion",methods=['POST'])
@@ -162,7 +161,7 @@ def nextQuestion():
         print(len(questionnaire['questions']))
         g.db.execute("update interviews set completed=1 where guid=?",[guid])
         g.db.commit()
-        return jsonify({"guid":guid,id":-1})
+        return jsonify({"guid":guid,"id":-1})
     question=questionnaire['questions'][maxQuestionAnswered+1]
     question["value"]=[]
     return jsonify(question)
