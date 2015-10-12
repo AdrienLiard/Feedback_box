@@ -130,7 +130,8 @@ def index():
 @application.route("/api/nextquestion",methods=['POST'])
 def nextQuestion():
     #get last question
-    question=request.get_json()  
+    question=request.get_json() 
+    guid=""
     if(question==None):
         question=questionnaire['questions'][0]
         guid=str(uuid.uuid4())
@@ -161,6 +162,7 @@ def nextQuestion():
         g.db.commit()
         return jsonify({"guid":guid,"id":-1})
     question=questionnaire['questions'][maxQuestionAnswered+1]
+    question["guid"]=guid
     question["value"]=[]
     return jsonify(question)
 
