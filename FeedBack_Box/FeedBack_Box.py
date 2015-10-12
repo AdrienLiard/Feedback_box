@@ -153,11 +153,9 @@ def nextQuestion():
                 g.db.execute("insert into interviewsdata (guid,question_id,closed_value) values (?,?,?)",[guid,question["id"],val])
                 g.db.commit()
         g.db.execute("update interviews set last_question=? where guid=?",[question["id"],guid])
-        g.db.commit()
-    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
-    print(maxQuestionAnswered)
-    if(maxQuestionAnswered+1==len(questionnaire['questions'])):
-        print(len(questionnaire['questions']))
+        g.db.commit()  
+    if(question["id"]+1==len(questionnaire['questions'])):
+        print("derniere question")
         g.db.execute("update interviews set completed=1 where guid=?",[guid])
         g.db.commit()
         return jsonify({"guid":guid,"id":-1})

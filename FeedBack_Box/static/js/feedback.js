@@ -37,7 +37,7 @@ var app=angular.module('feedback',['ngRoute','checklist-model'])
 	.controller('end',['$scope','$location',function($scope,$location){
 		$scope.back=function(){
 			
-			$location.path('/');
+			$location.path('/end');
 		};
 
 	}])
