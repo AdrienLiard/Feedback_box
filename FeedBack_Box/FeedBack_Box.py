@@ -159,7 +159,7 @@ def nextQuestion():
         g.db.execute("update interviews set completed=1 where guid=?",[guid])
         g.db.commit()
         return jsonify({"guid":guid,"id":-1})
-    question=questionnaire['questions'][maxQuestionAnswered+1]
+    question=questionnaire['questions'][question["id"]+1]
     question["guid"]=guid
     question["value"]=[]
     return jsonify(question)
