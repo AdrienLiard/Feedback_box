@@ -34,64 +34,55 @@ questionnaire={
     'questions':[{
     'id':0,
     'type':'single',
-    'isMandatory':True,
+    'isMandatory':False,
     'libelle':u'Bonjour et bienvenue sur le réseau BVA_CX. Ce réseau vous permet de donner votre avis sur l\'Hôtel The Peninsula en répondant à un court questionnaire anonyme (moins de 2 minutes).',
     'responses':[{'value':1,'lib':u'Je participe'}]
     },
     {
     'id':1,
     'type':'single',
-     'isMandatory':True,
+     'isMandatory':False,
     'libelle':u'Depuis votre arrivée, êtes vous satisfait du Peninsula ?',
-    'responses':[{'value':1,'lib':u'Extrêmement'},{'value':2,'lib':u'Tout à fait'},{'value':3,'lib':u'Plutôt'},{'value':4,'lib':u'Non'}]
+    'responses':[{'value':1,'lib':u'Non'},{'value':2,'lib':u'Plutôt'},{'value':3,'lib':u'Tout à fait'},{'value':4,'lib':u'Extrêmement'}]
     },
     {
     'id':2,
     'type':'single',
-     'isMandatory':True,
+     'isMandatory':False,
     'libelle':u'Quel élément vous a le plus satisfait ?',
     'responses':[{'value':1,'lib':u'La facilité d’accès'},{'value':2,'lib':u'Le cadre'},{'value':3,'lib':u'L\'accueil'},{'value':4,'lib':u'Le buffet du petit-déjeuner'}]
     },
     {
     'id':3,
     'type':'single',
-     'isMandatory':True,
-    'libelle':u'Quelle note de 1 à 10 donneriez-vous à cet élément (10 étant la meilleure note) ?',
-    'responses':[{'value':2,'lib':u'1'},{'value':3,'lib':u'2'},{'value':4,'lib':u'3'},{'value':5,'lib':u'4'},
-                 {'value':6,'lib':u'5'},{'value':7,'lib':u'6'},{'value':8,'lib':u'7'},{'value':9,'lib':u'8'},{'value':10,'lib':u'9'},{'value':11,'lib':u'10'}]
-    },
+     'isMandatory':False,
+    'libelle':u'Quel élément vous a le moins satisfait ?',
+    'responses':[{'value':1,'lib':u'La facilité d’accès'},{'value':2,'lib':u'Le cadre'},{'value':3,'lib':u'L\'accueil'},{'value':4,'lib':u'Le buffet du petit-déjeuner'}]
+    }, 
     {
     'id':4,
     'type':'single',
-     'isMandatory':True,
-    'libelle':u'Quel élément vous a le moins satisfait ?',
-    'responses':[{'value':1,'lib':u'La facilité d’accès'},{'value':2,'lib':u'Le cadre'},{'value':3,'lib':u'L\'accueil'},{'value':4,'lib':u'Le buffet du petit-déjeuner'}]
+     'isMandatory':False,
+    'libelle':u'Quelle conséquence aura cet élément ?',
+    'responses':[{'value':1,'lib':u'Je ne reviendrai plus'},{'value':2,'lib':u'Je vais faire une réclamation'},{'value':3,'lib':u'Je '},{'value':4,'lib':u'Aucune'}]
     },
     {
     'id':5,
-    'type':'single',
-     'isMandatory':True,
-    'libelle':u'Quelle note de 1 à 10 donneriez-vous à cet élément (10 étant la meilleure note) ?',
-    'responses':[{'value':2,'lib':u'1'},{'value':3,'lib':u'2'},{'value':4,'lib':u'3'},{'value':5,'lib':u'4'},
-
-                 {'value':6,'lib':u'5'},{'value':7,'lib':u'6'},{'value':8,'lib':u'7'},{'value':9,'lib':u'8'},{'value':10,'lib':u'9'},{'value':11,'lib':u'10'}]
-    },
-    {
-    'id':6,
     'type':'open',
      'isMandatory':False,
     'libelle':u'Avez-vous des suggestions à nous faire ?'
     },
     {
-    'id':7,
+    'id':6,
     'type':'open',
      'isMandatory':False,
     'libelle':u'Laissez-nous votre adresse mail si vous souhaitez recevoir notre newsletter !'
     },
     {
-    'id':8,
-    'type':'end',
-    'libelle':u'Mathieu is a motherfuckin lucky genius (still a genius) <a href="/dashboard">dash</a>'
+    'id':7,
+    'type':'single',
+     'isMandatory':False,
+    'libelle':u'Laissez-nous votre adresse mail si vous souhaitez recevoir notre newsletter !'
     }]
 }
 
@@ -124,22 +115,22 @@ def index():
         print(request.headers.get('User-Agent'))
         print(request.url)
         print("**********************************************")
-        # if(request.headers.get('User-Agent').startswith('CaptiveNetworkSupport')):
-        #      return "<HTML><HEAD><TITLE>Success</TITLE></HEAD><BODY>Success</BODY></HTML>"
-        # if("google" in request.base_url):
-        #      return "",204
-        # if("android" in request.base_url):
-        #      return "",204
-        if(request.url_root!=ROOT_URL):
-            print(request.url_root)
-            return redirect(ROOT_URL)
-        # id=request.cookies.get('id')
+        #if(request.headers.get('User-Agent').startswith('CaptiveNetworkSupport')):
+            #return "<HTML><HEAD><TITLE>Success</TITLE></HEAD><BODY>Success</BODY></HTML>"
+        #if("google" in request.base_url):
+            #return "",204
+        #if("android" in request.base_url):
+            #return "",204
+        #if(request.url_root!=ROOT_URL):
+            #print(request.url_root)
+            #return redirect(ROOT_URL)
+        #id=request.cookies.get('id')
         # if(id!=None):
         #     control=g.db.execute("select count(*) as ct from interviews where guid=?",[id]).fetchone()[0]
         #     if(control==0):
         #         id=None
         resp=make_response(render_template('questionnaire.html'))
-        #resp.set_cookie("id",guid)#
+        #resp.set_cookie("id",guid)
         return resp
 
 @application.route("/api/nextquestion",methods=['POST'])
@@ -153,8 +144,6 @@ def nextQuestion():
         g.db.execute("insert into interviews (guid) values (?)",[guid])
         g.db.commit()
         question["guid"]=guid
-        question["value"]=[]
-        return jsonify(question)
     else:
         print(question["id"])
         print(question["guid"])
@@ -170,13 +159,15 @@ def nextQuestion():
                 g.db.execute("insert into interviewsdata (guid,question_id,closed_value) values (?,?,?)",[guid,question["id"],val])
                 g.db.commit()
         g.db.execute("update interviews set last_question=? where guid=?",[question["id"],guid])
-        g.db.commit()  
-    if(question["id"]+1==len(questionnaire['questions'])):
-        print("derniere question")
+        g.db.commit()
+    maxQuestionAnswered=g.db.execute("select last_question from interviews where guid=?",[guid]).fetchone()[0]
+    print(maxQuestionAnswered)
+    if(maxQuestionAnswered+1==len(questionnaire['questions'])):
+        print(len(questionnaire['questions']))
         g.db.execute("update interviews set completed=1 where guid=?",[guid])
         g.db.commit()
         return jsonify({"guid":guid,"id":-1})
-    question=questionnaire['questions'][question["id"]+1]
+    question=questionnaire['questions'][maxQuestionAnswered+1]
     question["guid"]=guid
     question["value"]=[]
     return jsonify(question)

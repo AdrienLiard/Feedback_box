@@ -47531,3 +47531,33 @@ TypeError: 'NoneType' object has no attribute '__getitem__'
 [2015-10-12 15:17:23 +0000] [2807] [INFO] Worker exiting (pid: 2807)
 [2015-10-12 15:17:23 +0000] [2805] [INFO] Worker exiting (pid: 2805)
 [2015-10-12 15:17:23 +0000] [2590] [INFO] Shutting down: Master
+[2015-10-12 16:51:51 +0000] [2588] [INFO] Starting gunicorn 19.3.0
+[2015-10-12 16:51:51 +0000] [2588] [INFO] Listening at: http://0.0.0.0:8080 (2588)
+[2015-10-12 16:51:51 +0000] [2588] [INFO] Using worker: sync
+[2015-10-12 16:51:51 +0000] [2588] [INFO] Server is ready. Spawning workers
+[2015-10-12 16:51:51 +0000] [2802] [INFO] Booting worker with pid: 2802
+[2015-10-12 16:51:51 +0000] [2802] [INFO] Worker spawned (pid: 2802)
+[2015-10-12 16:51:51 +0000] [2803] [INFO] Booting worker with pid: 2803
+[2015-10-12 16:51:51 +0000] [2803] [INFO] Worker spawned (pid: 2803)
+[2015-10-12 16:51:51 +0000] [2804] [INFO] Booting worker with pid: 2804
+[2015-10-12 16:51:51 +0000] [2804] [INFO] Worker spawned (pid: 2804)
+[2015-10-12 16:52:24 +0000] [2588] [CRITICAL] WORKER TIMEOUT (pid:2802)
+[2015-10-12 16:52:24 +0000] [2802] [INFO] worker received SIGABRT signal
+[2015-10-12 16:52:24 +0000] [2588] [CRITICAL] WORKER TIMEOUT (pid:2803)
+[2015-10-12 16:52:24 +0000] [2802] [INFO] Worker exiting (pid: 2802)
+[2015-10-12 16:52:24 +0000] [2803] [INFO] worker received SIGABRT signal
+[2015-10-12 16:52:24 +0000] [2588] [CRITICAL] WORKER TIMEOUT (pid:2804)
+[2015-10-12 16:52:24 +0000] [2803] [INFO] Worker exiting (pid: 2803)
+[2015-10-12 16:52:24 +0000] [2804] [INFO] worker received SIGABRT signal
+[2015-10-12 16:52:24 +0000] [2804] [INFO] Worker exiting (pid: 2804)
+[2015-10-12 16:52:24 +0000] [2882] [INFO] Booting worker with pid: 2882
+[2015-10-12 16:52:24 +0000] [2882] [INFO] Worker spawned (pid: 2882)
+[2015-10-12 16:52:24 +0000] [2883] [INFO] Booting worker with pid: 2883
+[2015-10-12 16:52:24 +0000] [2883] [INFO] Worker spawned (pid: 2883)
+[2015-10-12 16:52:24 +0000] [2884] [INFO] Booting worker with pid: 2884
+[2015-10-12 16:52:24 +0000] [2884] [INFO] Worker spawned (pid: 2884)
+[2015-10-12 16:52:59 +0000] [2588] [INFO] Handling signal: term
+[2015-10-12 16:52:59 +0000] [2883] [INFO] Worker exiting (pid: 2883)
+[2015-10-12 16:52:59 +0000] [2882] [INFO] Worker exiting (pid: 2882)
+[2015-10-12 16:52:59 +0000] [2884] [INFO] Worker exiting (pid: 2884)
+[2015-10-12 16:52:59 +0000] [2588] [INFO] Shutting down: Master
