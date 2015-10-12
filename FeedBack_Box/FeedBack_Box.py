@@ -124,7 +124,7 @@ def index():
         #     if(control==0):
         #         id=None
         resp=make_response(render_template('questionnaire.html'))
-        #resp.set_cookie("id",guid)
+        #resp.set_cookie("id",guid)#
         return resp
 
 @application.route("/api/nextquestion",methods=['POST'])
